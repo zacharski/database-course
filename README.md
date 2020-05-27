@@ -3,7 +3,29 @@
 
 ## Course Description
 
-This course provides an introduction to databases and their application, particularly in data driven web applications.  The course covers both SQL noSQL approaches. This year we will be working with PostgreSQL, and Elasticsearch, and developing web apps using Javascript, and Node.js.
+This course provides an introduction to databases and backend web development.  It covers Postgresql, Javascript, HTML/CSS, and Elasticsearch. 
+
+
+
+## Expected Outcomes
+
+### JavaScript / Node.JS
+
+JavaScript, often abbreviated JS, is the core programming language of the web, running both in a user's browser and on the backend. It is a high-level, just-in-time compiled language. Node.js is a runtime environment that allows JavaScript to be executed outside of browser typically on the server side.
+
+## Week-by-Week 
+
+
+
+## **Required materials**
+
+**Google Cloud Account (or equivalent)**
+
+**Laptop:** You need to bring a laptop to class. You will be using it for in-class programming, learning to write SQL queries, and online tests.
+
+[Inquiryum’s Backend Developer Fundamentals course ](http://inquiryum.com/)
+
+
 
 
 
