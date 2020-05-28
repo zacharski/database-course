@@ -1,0 +1,523 @@
+{
+	"info": {
+		"_postman_id": "3330495d-4d25-6ae3-1359-d2b0e770d1bd",
+		"name": "workshop server 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check hello get request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding attendee to workshop copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"console.log('Checking Post')",
+							"tests[\"Add Attendee \"] = data.attendee === 'Ann Nowicki';",
+							"tests[\"Check 2\"] = data.workshop === 'React Fundamentals';"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "q",
+						"value": "Starbucks"
+					},
+					{
+						"key": "zip",
+						"value": "88005"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "search",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "React Fundamentals",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Ann Nowicki",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding attendee to another workshop",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e2ae04e7-6cfb-4d63-ae26-578d20da7b62",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"console.log('Checking Post');",
+							"tests[\"Add Attendee to Another Workshop\"] = data.attendee === 'Ann Nowicki';",
+							"tests[\"Check 2\"] = data.workshop === 'TensorFlow';"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "q",
+						"value": "Starbucks"
+					},
+					{
+						"key": "zip",
+						"value": "88005"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "search",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "TensorFlow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Ann Nowicky",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding Lucy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"console.log('Checking Post');",
+							"tests[\"Add Lucy Passed\"] = data.attendee === 'Lucy Phillips';",
+							"tests[\"Check 2\"] = data.workshop === 'TensorFlow';"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "q",
+						"value": "Starbucks"
+					},
+					{
+						"key": "zip",
+						"value": "88005"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "search",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "TensorFlow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Lucy Phillips",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding attendee to same workshop",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"console.log('Checking Post');",
+							"tests[\"Duplicate Registration\"] = data.error === 'attendee already enrolled';",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "q",
+						"value": "Starbucks"
+					},
+					{
+						"key": "zip",
+						"value": "88005"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "search",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "React Fundamentals",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Ann Nowicki",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all workshops",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Listing Workshops\"] = data.workshops.indexOf('TensorFlow') != -1;",
+							"tests[\"Listing Workshops 2\"] = data.workshops.indexOf('React Fundamentals') != -1;",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Attendees",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Listing Attendees\"] = data.attendees.indexOf('Lucy Phillips') != -1;",
+							"tests[\"Listing Workshops 2\"] = data.attendees.indexOf('Ann Nowicki') != -1;",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "workshop",
+						"value": "TensorFlow"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/api?workshop=TensorFlow",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "workshop",
+							"value": "TensorFlow"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Non Existent Workshop",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"workshop not entered\"] = data.error === 'workshop not found';",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api?workshop=Deep+Learning",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "workshop",
+							"value": "Deep+Learning"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check SQL injection",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"SQL Injection test\"] = data.attendee === \"Maggie O'Phillips\";",
+							"tests[\"Check 2\"] = data.workshop === 'TensorFlow';"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "q",
+						"value": "Starbucks"
+					},
+					{
+						"key": "zip",
+						"value": "88005"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "search",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "TensorFlow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Maggie O'Phillips",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Attendees workshop not exist",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Non-Existent Workshop\"] = data.error.indexOf('workshop not found') != -1;",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "workshop",
+						"value": "TensorFlow"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/api?workshop=Tensor",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "workshop",
+							"value": "Tensor"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
