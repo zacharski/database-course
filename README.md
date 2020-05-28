@@ -13,6 +13,29 @@ This course provides an introduction to databases and backend web development.  
 
 JavaScript, often abbreviated JS, is the core programming language of the web, running both in a user's browser and on the backend. It is a high-level, just-in-time compiled language. Node.js is a runtime environment that allows JavaScript to be executed outside of browser typically on the server side.
 
+Students should be able to 
+
+* write complex command line programs in JavaScript.
+* write code that executes asynchronously 
+* write a scalable, maintainable, backend server.
+* write code that interacts with a database server
+* test and evaluate code using an industry-standard test environment.
+
+### PostgreSQL
+
+PostgreSQL is one of the most popular free and open-source relational database management systems, and is available on wide variety of operating systems. 
+
+Students should be able to
+
+* design and implement databases based on an English description of the data.
+* understand database normalization and design database that meet the normalization requirements.
+
+
+
+### HTML/CSS
+
+
+
 ## Week-by-Week 
 
 
@@ -39,14 +62,14 @@ If you have not made contact with the Office of Disability Resources and have re
 
 
 
-## Title IX Statement
+## Title IX StatementJavascript
 
 University of Mary Washington faculty are committed to supporting students and upholding the University’s Policy on Sexual and Gender Based Harassment and Other Forms of Interpersonal Violence. Under Title IX and this Policy, discrimination based upon sex or gender is prohibited. If you experience an incident of sex or gender based discrimination, we encourage you to report it. While you may talk to me, understand that as a “Responsible Employee” of the University, I MUST report to UMW’s Title IX Coordinator what you share. If you wish to speak to someone confidentially, please contact the below confidential resources. They can connect you with support services and help you explore your options. You may also seek assistance from UMW’s Title IX Coordinator. Please visit http://diversity.umw.edu/title-ix/ to view UMW’s Policy on Sexual and Gender Based Harassment and Other Forms of Interpersonal Violence and to find further information on support and resources.
 
 #### Resources
 
 Tiffany W. Oldfield, J.D.
-Title IX Coordinator
+Title IX CoordinatorJavascript
 Office of Title IX
 Fairfax House
 540-654-5656
@@ -62,7 +85,7 @@ mthomson@umw.edu
 
 *On Campus*
 
-Talley Center for Counselling Services
+JavascriptTalley Center for Counselling Services
 Lee Hall 106
 
 Student Health Center
