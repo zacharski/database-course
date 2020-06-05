@@ -34,13 +34,6 @@ const staff = [{name: 'Stephen Davies', role: "Professor",  department: "Compute
 
 const getNumber = (person, book) => {
     // TO DO
-    for (const entry of book){
-        if (entry.name == person){
-            return entry.phone;
-        }
-        
-    }
-
     return ("not found");
 }
 

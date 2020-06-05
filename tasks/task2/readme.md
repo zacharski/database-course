@@ -2,14 +2,14 @@
 
 
 
-In the SQL module, you learned how to 
+In the Intro to Node and Intro to JavaScript sections of the NodeJS module, you learned how to 
 
 
 
-* install PostgreSQL on your laptop
-* how to design and create databases and database tables
-* how to insert information into a database
-* how to query a database table
+* write a basic JavaScript program using constructs you learned in other languages (for loops, conditionals, etc.)
+* use the `for of` loop JavaScript provides
+* how to use the `assert`statement as a rudimentary way to test your code
+* how to write an arrow function `(a, b, c) => {:}...}`
 
 
 
@@ -27,7 +27,7 @@ The files we need are in the same folder as this readme file.  The easiest way t
 
 For the gitlab lab we created our own git repository. We want to copy the task2 folder that was part of the repository we just cloned, to our db-class repository in the practice folder.  For example,
 
-`cp -r tasks/task1 ~/db-class/practice`
+`cp -r tasks/task2 ~/db-class/practice`
 
 ### step 2 nvm, node, and npm installed
 
@@ -193,18 +193,6 @@ const roles = (book) => {
 
 
  
-
-billboard
-
-id | artist | track | album
---: | :-- | :-- | :--
-1 | Lizzo | Truth Hurts | Cuz I Love You
-2 | Lizzo | Good as Hell | Cuz I Love You
-3 | Shawn Mendes | Senorita | Shawn Mendes
-4 | Billie Eilish | Bad Guy |  When We All Fall Asleep, Where Do We Go?
-5 | Lil Tecca | Ran$om | Ran$om
-6 | Shawn Mendes | There's Nothing Holdin' Me Back |  Illuminate
-7 | Billie Eilish | Everything I wanted | -
 
 
 
