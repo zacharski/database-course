@@ -5,6 +5,20 @@
 
 This course provides an introduction to databases and backend web development.  It covers Postgresql, Javascript, HTML/CSS, and Elasticsearch. 
 
+### An asynchronous online class
+
+This class is asynchronous meaning there is no mandatory real-time interaction. You will be working through the Inquiryum Backend Developer Fundamentals Course. You can watch the videos anytime you want. You can play them at a faster speed, you can rewatch them or pause them. You can work on  the course material in 20 minute blocks throughout a day, or devote a large contiguous block of time once per week. When you need help you can use the class Slack channel to get assistance from me or your classmates. If you are really stuck we can arrange a screen sharing Zoom call. 
+
+The advantages of this approach is that it allows you great flexibility in when you want to work on the material and for how long. And, as described below under mastery learning, it allows you to work at your own pace.
+
+
+
+### Instructor availability
+
+I will be sitting at my laptop on the Slack channel on Monday and Wednesdays from 10am until 2pm. This means that if you message me, I will respond  immediately unless I am helping another student. Excluding those times, my next level of availability is Monday through Thursday from 11am to 4pm. My average response time during that period is 10 minutes. Feel free to message me outside of those times but my response delay might be significant. Often I turn off Slack notifications at midnight. There may be times during Friday through Sunday when I don't have cell coverage and I will not be able to receive your message.
+
+The above hours may be subject to change if other times benefit more students. These changes will be announced in the Slack channel.
+
 
 
 ## Expected Outcomes
@@ -75,7 +89,7 @@ The majority of effort in the course is in working on tasks and project, which h
   * test and evaluate you code.
   * move you code to a production environment.
 
-Both tasks and projects are evaluated as to whether the code works or not (passes the necessary tests). If it does not you will fix your code and resubmit. You can submit as many times as necessary to pass the tests. The test set that is used to evaluate your code may be larger than that given to you to add you in development. For some projects there are optional parts for which you will get additional points.
+Both tasks and projects are evaluated as to whether the code works or not (passes the necessary tests). If it does not you will fix your code and resubmit. You can submit as many times as necessary to pass the tests. The test set that is used to evaluate your code may be larger than that given to you to aid you in development. For some projects there are optional parts for which you will get additional points.
 
 You must complete the prerequisite tasks before starting a project and you cannot demo more than 2 projects per week.
 
@@ -83,7 +97,7 @@ You must complete the prerequisite tasks before starting a project and you canno
 
 ## Core Competency Task
 
-Often when you are applying for a job, you are given a timed programming task. The core competency task is designed to help you prepare for this. The tasks involves writing a backend for a web service in JavaScript and PostgreSQL. You can take the test at any time (after you meet the prerequisites), but once you start you will have hours hours to complete it.
+Often when you are applying for a job, you are given a timed programming task. The core competency task is designed to help you prepare for this. The tasks involves writing a backend for a web service in JavaScript and PostgreSQL. You can take the test at any time (after you meet the prerequisites), but once you start you will have four hours to complete it.
 
 
 
@@ -97,15 +111,29 @@ Traditional classes are time-based learning. You spend a specific amount of time
 
 This class doesn't work like that.
 
-In contrast to time-based learning,  in Mastery Learning you stay on the topic until you master it. You work at your own pace. This online class is based on this approach.  You stay on a topic until you master it.  The lectures are a set of videos (mostly screencasts) that you can watch at anytime. If the material is easy for you, you can speed up the videos and watch them at 1.5 speed. If you find the material challenging, you can rewatch the videos, google for more information or request an private Zoom conference with the instructor. 
+In contrast to time-based learning,  in mastery Learning you stay on the topic until you master it. You work at your own pace. This online class is based on this approach.  You stay on a topic until you master it.  The lectures are a set of videos (mostly screencasts) that you can watch at anytime. If the material is easy for you, you can speed up the videos and watch them at 1.5 speed. If you find the material challenging, you can rewatch the videos, google for more information, interact with other learners on the Slack channel, or request a private Zoom conference with the instructor. 
 
-Obviously, the work-at-your-own pace approach will collide with the end of the semester and there will be some material that you will not cover. The course is designed so that the essential core information is presented first, so you will develop solid foundational skills with no gaps. 
+Obviously, the work-at-your-own pace approach will collide with the end of the semester and there will be some material that you will not cover. The course is designed so that the essential core information is presented first, to enable you to develop solid foundational skills with no gaps. 
 
 
 
 ### Mastery Learning Difficulties
 
-This course is work at your own pace. Other courses you might be taking have fixed deadlines, So, for example, you might have a gnarly project for a programming class due this week and a big operating systems project due next week. It is likely that you will work on those projects and ignore working on this course. It is human nature. To give you some flexibility but to help you stay focused, there will be both recommended and hard deadlines for each project. For example, one project has a recommended deadline of the fourth week of class and a hard deadline of the eighth week. 
+This course is work at your own pace. Other courses you might be taking have fixed deadlines, So, for example, you might have a gnarly project for a programming class due this week and a big operating systems project due next week. It is likely that you will work on those projects since they have immediate deadlines and ignore working on this course. It is human nature. To give you some flexibility but to help you stay focused, there will be both recommended and hard deadlines for each project. For example, one project has a recommended deadline of the fourth week of class and a hard deadline of the eighth week. 
+
+
+
+## The course material
+
+Order | Lesson
+--: | :--
+1 | [JumpStart](jumpstart/readme.md) 
+2 | [Tasks](tasks/readme.md)
+3 | [Projects](projects/readme.md)
+
+
+
+
 
 Again, the class is work-at-your-own pace, but we provide a suggested schedule below.
 
@@ -132,6 +160,9 @@ Week | Date | Unit | Topics
 15 | 30 Nov | Projects      | - 
 
 
+
+
+
 ## **Required materials**
 
 **Google Cloud Account (or equivalent)**
@@ -142,11 +173,45 @@ Week | Date | Unit | Topics
 
 
 
+## Slack 
+
+Slack is a work chat application that many tech companies use. We are going to be using Slack in a number of ways. If you have a particular programming question you can ask it in a general channel and hopefully you will get an answer or suggestion quickly from either myself or fellow learners. 
+
+
+
+[Sign up for Slack here](https://join.slack.com/t/umwdatabaseclass/shared_invite/enQtOTAzNzMyNDkyODY0LWRmNzkxYWM2YTM0ZTQ1Y2M5YzZiMGU1NzRmNjEwOGI3ZjMzMzJmNGFhYjdhNTAzM2U0YzM3Y2QwOWFkZmE0MzE).
+
 ## Okay but how do I pass?
 
-Figure this out!
+Grading is based on a method developed by Professor Lee Sheldon at Indiana University. It is based on obtaining experience points (XP). The number of XP determines what level you are at. You start the class at Level Zero and with 0 XP. The level you obtain at the end of the semester determines your final grade. Here is the chart:
 
+Level | XP | Grade
+:---: | :---: | :---:
+Zero  | 0 | F
+One | 240 | D
+Two | 340 | D+
+Three | 450  | C-
+Four | 550 | C
+Five | 650 | C+
+Six | 750 | B- 
+Seven | 850 | B
+Eight | 925 | B+
+Nine | 1000 | A-
+Ten | 1100 | A
 
+Here are the ways of earning XP:
+
+* there will be at least 7 tasks. On average each will be worth 20xp
+
+* there are 6 PostgreSQL projects. Each is worth 100xp
+
+* there is an ElasticSearch project worth 150xp
+
+* the core competency programming challenge is worth 150xp
+
+* the optional oral exam is worth 150xp
+
+  
 
 ## **Accessibility Statement**
 
@@ -163,13 +228,13 @@ University of Mary Washington faculty are committed to supporting students and u
 #### Resources
 
 Tiffany W. Oldfield, J.D.
-Title IX CoordinatorJavascript
+Title IX Coordinator
 Office of Title IX
 Fairfax House
 540-654-5656
 toldfiel@umw.edu
 
-Myranda Thomson
+nearlyMyranda Thomson
 Title IX Deputy for Students
 Area Coordinator
 540-654-1184
@@ -195,7 +260,7 @@ RCASA
 
 ## Recording Policy
 
-JavascriptClassroom activities in this course may be recorded by students enrolled in the course for the
+Classroom activities in this course may be recorded by students enrolled in the course for the
 personal, educational use of that student or for all students presently enrolled in the class only,
 and may not be further copied, distributed, published or otherwise used for any other purpose
 without the express written consent of the course instructor. All students are advised that
