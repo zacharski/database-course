@@ -2,7 +2,9 @@
 
 
 
+#### Submitting your code
 
+When you finish one of these tasks, you need to notify me by [filling our this form](https://forms.gle/Wymwd7ZoTvMs3vYL7)
 
 Task | Lesson
 ----: | :---
