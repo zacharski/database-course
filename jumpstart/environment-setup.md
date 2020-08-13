@@ -12,6 +12,7 @@ This page based on one from the [Ada Developers Academy](https://github.com/Ada-
 * Review notes
 * Complete install of essential software
   * VS Code
+  * Github desktop
   * NVM
   * Node
   * NPM
