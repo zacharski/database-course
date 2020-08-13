@@ -2,6 +2,8 @@
 
 ### essentials
 
+[Welcome Video](https://youtu.be/WSYTu3fCc1Q)
+
 Instructor: Ron Zacharski ron.zacharski@gmail.com, 575.680.4041
 
 [Experience Point Sheet](https://docs.google.com/spreadsheets/d/1UGGA8cjL4WEZ9N8AQGe8NW4So3p8aI_Umiww-Z3C8SY/edit?usp=sharing)
