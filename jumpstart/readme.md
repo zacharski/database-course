@@ -30,7 +30,7 @@ Order | Lesson
 2 | [Effective Internet Searching](internet-searching.md)
 3 | [Terminal](terminal.md)
 4 | [Environment Setup](environment-setup.md)
-5 | [Gitlab lab](gitlablab.md)
+5 | [Github lab](gitlablab.md) 
 
 
 
