@@ -49,3 +49,5 @@ The server has minimal content and only has information for the following campgr
 * Taylor's Railroad 
 * Three Rivers 
 * Wolf Hollow
+
+![](../../jumpstart/pics/campgroundsearch.png)
