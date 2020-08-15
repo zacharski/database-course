@@ -1,0 +1,1649 @@
+{
+	"variables": [],
+	"info": {
+		"name": "workshop server 2",
+		"_postman_id": "8c507cb2-d568-0c8d-8d39-01a9f4f9cd2f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User Ann",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Add User Test\"] = data.status === 'user added';",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/create-user",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ann",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Ann",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Mulkern",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mulkern@gmail.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create User Clara",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Add User Test\"] = data.status === 'user added';",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/create-user",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "clara",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Clara",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Wieck",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "clara@piano.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create User Maggie",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Add User Test\"] = data.status === 'user added';",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/create-user",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "maggie'phillips",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Maggie",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Phillips",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "MargaretP@uwm.edu",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create another Maggie Philips",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Add User Test\"] = data.status === 'user added';",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/create-user",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "phillips",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Maggie",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Phillips",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "maggie@wikibuy.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create User 3 -- username already in db",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Add User Test\"] = data.status === 'username taken';",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/create-user",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "phillips",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Ralph",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "O'Phillips",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ralph@wikibuy.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Spam username",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Add User Test\"] = data.status === 'user added';",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/create-user",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "spam",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Spam",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Spam",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Spam@spam.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Delete Test\"] = data.status === 'deleted';",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "{{URL}}/delete-user?username=ben",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"delete-user"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "ben",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "spam",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Spam",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "Spam",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "spam@spam.com",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List Users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"List Users 1 - Ann\"] = check('Ann', 'Mulkern', 'ann', data.users);",
+							"tests[\"List Users 2 - Clara\"] = check('Clara', 'Wieck', 'clara', data.users);",
+							"tests[\"List Users 3 - Spam\"] = ! check('Spam', 'Spam', 'spam', data.users);",
+							"//tests[\"List Users 2\"] = data.workshops.indexOf('React Fundamentals') != -1;",
+							"",
+							"function check(firstname, lastname, username, data) {",
+							"    var i, len = data.length;",
+							"    var result = 0;",
+							"    for (i = 0; i < len; i++) {",
+							"        if (data[i] && (data[i].firstname == firstname) && (data[i].lastname == lastname) && (data[i].username == username)) {",
+							"            result = 1;",
+							"        }",
+							"    ",
+							"    }",
+							"    return result;",
+							"}",
+							" "
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "{{URL}}/list-users?\\&type=full",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"list-users"
+					],
+					"query": [
+						{
+							"key": "\\",
+							"value": "",
+							"equals": false,
+							"description": ""
+						},
+						{
+							"key": "type",
+							"value": "full",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "React Fundamentals",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Lucy Phillips",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List Users - summary",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"List Users 1 - Ann\"] = check('Ann', 'Mulkern', data.users);",
+							"tests[\"List Users 2 - Clara\"] = check('Clara', 'Wieck', data.users);",
+							"tests[\"List Users 3 - Spam\"] = ! check('Spam', 'Spam', data.users);",
+							"//tests[\"List Users 2\"] = data.workshops.indexOf('React Fundamentals') != -1;",
+							"",
+							"function check(firstname, lastname, data) {",
+							"    var i, len = data.length;",
+							"    var result = 0;",
+							"    for (i = 0; i < len; i++) {",
+							"        if (data[i] && (data[i].firstname == firstname) && (data[i].lastname == lastname) && !(data[i].email)) {",
+							"            result = 1;",
+							"        }",
+							"    ",
+							"    }",
+							"    return result;",
+							"}",
+							" "
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "{{URL}}/list-users?\\&type=summary",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"list-users"
+					],
+					"query": [
+						{
+							"key": "\\",
+							"value": "",
+							"equals": false,
+							"description": ""
+						},
+						{
+							"key": "type",
+							"value": "summary",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "React Fundamentals",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Lucy Phillips",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Workshop - React",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"//tests[\"Add Workshop\"] = data.status === 'workshop added'};",
+							"tests[\"Add Workshop Test\"] = data.status === 'workshop added';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/add-workshop",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "React Fundamentals",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2018-3-16",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Boston",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Workshop 2 - Tensorflow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Add Workshop Tensorflow\"] = data.status === 'workshop added';",
+							"//tests[\"Add Workshop Test\"] = data.status === 'workshop already in database';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/add-workshop",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensorflow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2018-05-06",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Martha's Vineyard",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Workshop Tensorflow new Location",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Add Workshop Tensorflow\"] = data.status === 'workshop added';",
+							"//tests[\"Add Workshop Test\"] = data.status === 'workshop already in database';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/add-workshop",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensorflow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2018-05-06",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Albuquerque",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Workshop - Tensorflow new Date",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"//tests[\"Add Workshop\"] = data.status === 'workshop added'};",
+							"tests[\"Add Workshop Test\"] = data.status === 'workshop added';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/add-workshop",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensorflow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2018-05-07",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Martha's Vineyard",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Yet Another Tensorflow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"//tests[\"Add Workshop\"] = data.status === 'workshop added'};",
+							"tests[\"Add Workshop Test\"] = data.status === 'workshop added';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/add-workshop",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensorflow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2018-05-07",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Tucson",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "enroll Maggie in Tensorflow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"//tests[\"Add Workshop\"] = data.status === 'workshop added'};",
+							"tests[\"Add Workshop Test\"] = data.status === 'user added';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/enroll",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensorflow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2018-05-06",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Martha's Vineyard",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "maggie'phillips",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "enroll Maggie in Tensorflow - 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"//tests[\"Add Workshop\"] = data.status === 'workshop added'};",
+							"tests[\"Add Workshop Test\"] = data.status === 'user already enrolled';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/enroll",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensorflow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2018-05-06",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Martha's Vineyard",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "maggie'phillips",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "enroll Maggie in diff location",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"",
+							"tests[\"Add person to workshop in diff. location Test\"] = data.status === 'user added';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/enroll",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensorflow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2018-05-06",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Albuquerque",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "maggie'phillips",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "enroll Maggie in diff date",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"",
+							"tests[\"Add person to workshop on diff. date Test\"] = data.status === 'user added';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/enroll",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensorflow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2018-05-07",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Martha's Vineyard",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "maggie'phillips",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "enroll Maggie in Deep Learning",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"",
+							"tests[\"No Workshop Test\"] = data.status === 'workshop does not exist';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/enroll",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Deep Learning",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2018-05-06",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Martha's Vineyard",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "maggie'phillips",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "enroll Ann in Tensorflow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"//tests[\"Add Workshop\"] = data.status === 'workshop added'};",
+							"tests[\"Add Workshop Test\"] = data.status === 'user added';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/enroll",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensorflow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2018-05-06",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Martha's Vineyard",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "ann",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "enroll Clara in Tensorflow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"//tests[\"Add Workshop\"] = data.status === 'workshop added'};",
+							"tests[\"No Seats Test\"] = data.status === 'no seats available';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/enroll",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensorflow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2018-05-06",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Martha's Vineyard",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "clara",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List Workshops",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"React Boston Test\"] = check('React Fundamentals', 'Boston', '2018-03-16', data.workshops);",
+							"tests[\"TensorFlow Test\"] = check('Tensorflow', \"Martha's Vineyard\", '2018-05-07', data.workshops);",
+							"tests[\"Tensorflow Martha Test\"] = check('Tensorflow', \"Martha's Vineyard\", '2018-05-06', data.workshops);",
+							"tests[\"Tensorflow Albuquerque Test\"] = check('Tensorflow', \"Albuquerque\", '2018-05-06', data.workshops);",
+							"",
+							"function check(title, location, date, data) {",
+							"    var i, len = data.length;",
+							"    var result = 0;",
+							"    for (i = 0; i < len; i++) {",
+							"        if (data[i] && (data[i].title == title) && (data[i].location == location) && (data[i].date == date)) {",
+							"            result = 1;",
+							"        }",
+							"    ",
+							"    }",
+							"    return result;",
+							"}",
+							" "
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{URL}}/list-workshops",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensor Flow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2017-11-07",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "wlocation",
+							"value": "Boston",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Attendees",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Ann Mulkern Test\"] = check('Ann', 'Mulkern',  data.attendees);",
+							"tests[\"Maggie Phillps Test\"] = check('Maggie', 'Phillips',  data.attendees);",
+							"",
+							"function check(firstname, lastname, data) {",
+							"    var i, len = data.length;",
+							"    var result = 0;",
+							"    for (i = 0; i < len; i++) {",
+							"        if (data[i] && (data[i].firstname == firstname) && (data[i].lastname == lastname)) {",
+							"            result = 1;",
+							"        }",
+							"    ",
+							"    }",
+							"    return result;",
+							"}",
+							" "
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "{{URL}}/attendees?title=Tensorflow&date=2018-05-06&location=Martha's Vineyard",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"attendees"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Tensorflow",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "date",
+							"value": "2018-05-06",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "location",
+							"value": "Martha's Vineyard",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensor Flow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2017-11-07",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "wlocation",
+							"value": "Boston",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Nobody Enrolled",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests['Nobody enrolled'] = data.attendees.length === 0;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "{{URL}}/attendees?title=Tensorflow&date=2018-05-07&location=Tucson",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"attendees"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Tensorflow",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "date",
+							"value": "2018-05-07",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "location",
+							"value": "Tucson",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensor Flow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2017-11-07",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "wlocation",
+							"value": "Boston",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "No Workshop",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"workshop not entered\"] = data.error === 'workshop does not exist';"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "{{URL}}/attendees?title=Tensorflow&date=2018-05-06&location=Tucson",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"attendees"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Tensorflow",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "date",
+							"value": "2018-05-06",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "location",
+							"value": "Tucson",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Tensor Flow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2017-11-07",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "wlocation",
+							"value": "Boston",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxseats",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "instructor",
+							"value": "Fiona Helbron",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

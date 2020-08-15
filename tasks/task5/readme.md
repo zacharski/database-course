@@ -273,5 +273,5 @@ Again, make sure your `.gitignore` file includes `.env` and `node_modules` If yo
 
 
 
-### Step 13 notify the instructor 
+### Step 10 notify the instructor 
 
