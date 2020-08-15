@@ -137,7 +137,7 @@ Order | Lesson
 --: | :--
 1 | [JumpStart](jumpstart/readme.md) 
 2 | [Tasks](tasks/readme.md)
-3 | [Projects](projects/readme.md)
+3 | [Projects](rudiments/README.md) 
 
 
 
