@@ -81,19 +81,29 @@ The majority of effort in the course is in working on tasks and project, which h
 
 ### Tasks
 
-* Closely mirrors the examples shown in the course videos.
-* Generally the majority of the code is provided for you.
+* Closely mirror the examples shown in the course videos.
+* The majority of the code is provided to you.
 * Where appropriate, test code is also provided enabling you to get instant feedback.
 * You are to:
   * write a small amount of code to complete the task
   * evaluate what you have done by running the tests
 
+Tasks are evaluated on a five tier system.
 
+* **tier 1** the task code works and all code is 100% correct.
+* **tier 2** around 90% of the task code works and there are a few coding errors.
+* **tier 3** most of the task code works and there are coding errors.
+* **tier 4** some element works correctly but there are significant errors.
+* **tier 5** the code mostly does not work or was not submitted. 
+
+For example, if a task is worth 20 points, you might get 20 for tier 1, 16 for tier 2, 12 for tier 3, 8 for tier 4 and zero for tier 5. 
+
+You can submit up to two tasks per week.
 
 ### Projects
 
-* Follows examples shown in the course videos.
-* Builds off of concepts and skills you learned completing prerequisite tasks.
+* Follow examples shown in the course videos.
+* Build off of concepts and skills you learned completing prerequisite tasks.
 * Project definition provides either
   * an API specification and test file
   * a video showing an example of a completed project
@@ -103,15 +113,15 @@ The majority of effort in the course is in working on tasks and project, which h
   * test and evaluate you code.
   * move you code to a production environment.
 
-Both tasks and projects are evaluated as to whether the code works or not (passes the necessary tests). If it does not you will fix your code and resubmit. You can submit as many times as necessary to pass the tests. The test set that is used to evaluate your code may be larger than that given to you to aid you in development. For some projects there are optional parts for which you will get additional points.
+Projects are evaluated as to whether the code works or not (passes the necessary tests). If it does not you will fix your code and resubmit. You can submit as many times as necessary to pass the tests. The test set that is used to evaluate your code may be larger than that given to you to aid you in development. For some projects there are optional parts for which you will get additional points.
 
-You must complete the prerequisite tasks before starting a project and you cannot demo more than 2 projects per week.
+You must complete the prerequisite tasks before starting a project and you cannot submit more than 2 projects per week.
 
 
 
 ## Core Competency Task
 
-Often when you are applying for a job, you are given a timed programming task. The core competency task is designed to help you prepare for this. The tasks involves writing a backend for a web service in JavaScript and PostgreSQL. You can take the test at any time (after you meet the prerequisites), but once you start you will have four hours to complete it.
+Often when you are applying for a job, you are given a timed programming task. The core competency task is designed to help you prepare for this. The tasks involves writing a backend for a web service in JavaScript and PostgreSQL. You can take the test at any time (after you meet the prerequisites), but once you start you will have four hours to complete it. By *any time* I mean that you can decide to take it at 1 in the afternoon on a particular Tuesday, or 1am on a Sunday morning.
 
 
 
@@ -137,7 +147,7 @@ This course is work at your own pace. Other courses you might be taking have fix
 
 Order | Lesson
 --: | :--
-1 | [JumpStart](jumpstart/readme.md) 
+1 | [JumpStart](jumpstart) 
 2 | [Tasks](tasks/readme.md)
 3 | [Projects](rudiments/README.md) 
 
