@@ -14,7 +14,7 @@ Welcome to the course.
 4. If you are not already familiar with git, watch the two git videos in the deploy module on [Inquiryum.com](http://inquiryum.com) 
 5. Create your own github repository using the specification on the fifth lesson on this page.
 6. [Sign up to our Slack workspace](https://join.slack.com/t/umwdatabaseclass/shared_invite/zt-ghwsee5i-aA8KlDiJGP_up9f3kK_eqg)
-7. Fill out the [information form](https://docs.google.com/forms/d/e/1FAIpQLSe1VtnW1_miYDjwjg0DKcklDzGzBXgXd56IGYonDt2wAvn3zA/viewform)
+7. Fill out the [information form](https://forms.gle/zg8A7GwdrxGLuNhE8)
 
 
 
