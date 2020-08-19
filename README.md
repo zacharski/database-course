@@ -25,7 +25,7 @@ The advantages of this approach is that it allows you great flexibility in when 
 
 ### Optional Zoom Study Groups
 
-See the description of the study groups on the [What to expect page](https://github.com/zacharski/database-class/blob/master/jumpstart/what_to_expect.md).
+See the description of the study groups on the [What to expect page](https://github.com/zacharski/database-course/blob/master/jumpstart/what_to_expect.md).
 
 ### Instructor availability
 
