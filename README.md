@@ -2,13 +2,15 @@
 
 ### essentials
 
-[Welcome Video](https://youtu.be/WSYTu3fCc1Q)
 
-Instructor: Ron Zacharski ron.zacharski@gmail.com, 575.680.4041
-
-[Experience Point Sheet](https://docs.google.com/spreadsheets/d/1UGGA8cjL4WEZ9N8AQGe8NW4So3p8aI_Umiww-Z3C8SY/edit?usp=sharing)
-
-The [UMW Database Slack Workspace](https://umwdatabaseclass.slack.com/)
+\# | resource
+--: | :---
+1 | [The current version of this syllabus](https://github.com/zacharski/database-course)
+2 | [Welcome Video](https://youtu.be/WSYTu3fCc1Q)
+3 | [What should you do the first week](https://github.com/zacharski/database-course/tree/master/jumpstart) 
+4 | Instructor: Ron Zacharski ron.zacharski@gmail.com, 575.680.4041
+5| [Experience Point Sheet](https://docs.google.com/spreadsheets/d/1UGGA8cjL4WEZ9N8AQGe8NW4So3p8aI_Umiww-Z3C8SY/edit?usp=sharing)
+6 | The [UMW Database Slack Workspace](https://umwdatabaseclass.slack.com/)
 
 
 
