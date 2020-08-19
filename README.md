@@ -23,7 +23,9 @@ This class is asynchronous meaning there is no mandatory real-time interaction. 
 
 The advantages of this approach is that it allows you great flexibility in when you want to work on the material and for how long. And, as described below under mastery learning, it allows you to work at your own pace.
 
+### Optional Zoom Study Groups
 
+See the description of the study groups on the [What to expect page](https://github.com/zacharski/ml-class/blob/master/jumpstart/what_to_expect.md).
 
 ### Instructor availability
 
