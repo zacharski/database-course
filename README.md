@@ -148,8 +148,8 @@ This course is work at your own pace. Other courses you might be taking have fix
 Order | Lesson
 --: | :--
 1 | [JumpStart](jumpstart) 
-2 | [Tasks](tasks/readme.md)
-3 | [Projects](rudiments/README.md) 
+2 | [Tasks](tasks) 
+3 | [Projects](rudiments) 
 
 
 
@@ -179,7 +179,29 @@ Week | Date | Unit | Topics
 14 | 23 Nov | Projects      | -                                           
 15 | 30 Nov | Projects      | - 
 
+### Deadlines hard and soft
 
+Meeting the hard deadlines should put you around a C for the course. To be considered to be on time for a hard deadline, the code must be submitted before the date indicated.
+
+| Week | Date   | Recommended             | Hard deadline                |
+| ---: | :----- | :---------------------- | :--------------------------- |
+|    1 | 24 Aug | -                       | -                            |
+|    2 | 31 Aug | -                       | -                            |
+|    3 | 7 Sep  | -                       | -                            |
+|    4 | 14 Sep | Project 1 - Workshop    | -                            |
+|    5 | 21 Sep | Project 2 - Workshop v2 | -                            |
+|    6 | 28 Sep | -                       | Project 1 - Workshop         |
+|    7 | 5 Oct  | Project 3 - NextJS      | -                            |
+|    8 | 12 Oct | -                       | -                            |
+|    9 | 19 Oct | Project 4 - Nutrition   | Project 2 - Workshop v2      |
+|   10 | 26 Oct | -                       | -                            |
+|   11 | 2 Nov  | Project 5 - TBD         | -                            |
+|   12 | 9 Nov  | -                       | Project 3 - NextJS           |
+|   13 | 16 Nov | Project 6 - TBD         | -                            |
+|   14 | 23 Nov | -                       | Project 4 - Complete Web App |
+|   15 | 30 Nov | Elasticsearch           | -                            |
+
+### 
 
 
 
@@ -231,7 +253,27 @@ Here are the ways of earning XP:
 
   
 
-  
+
+## Honor Code Policy
+
+[Computer Science Department Honor Code Policy](https://cas.umw.edu/computerscience/cpsc-department-honor-code-policy/)
+
+The amendments to the Computer Science Department policy are as follows (the numbers related to the numbers in the policy):
+
+1. In the initial comment block of any submitted assignment, type *I hereby swear upon my word of honor that I have neither given nor received unauthorized aid on this work* followed by your name.
+2. I am more flexible than the policy "you are *not* to communicate to others in any way about your assignment." My rule of thumb is What would a responsible adult do on the job?  If you have a deadline on the job at a startup and didn't know how to do something, the responsible thing wouldn't be to sit at your workstation just getting more and more frustrated and depressed and missing the deadline. The responsible person would get whatever help was necessary to complete the task. On the other hand, a responsible person wouldn't let someone else do all the work and present it as his own. That would be a violation of this policy. (See the Slack section of the syllabus)
+3. Regarding " Remember that *giving* unauthorized help violates the Honor Code just as much as *receiving* unauthorized help does." Again, I refer to the 'responsible adult' mentioned above. I would like people to help each other but yet do the work to learn the material. Sharing a complete assignment violates this point, but helping a person debug a function is fine.
+4. Sadly, this contradicts what you want to do in your professional life. In your professional life, you want to post solutions to things you figured out as a way of helping people in the community.  In fact, we are going to be using some material people posted in this class. However, to prevent plagiarism, you will only post your material to a private github repository. Sorry.
+5. You should acknowledge the people that helped you in writing in your submission.  For example, "Ann Mulkern helped me with the code to divide the dataset into training and testing sets"
+6. All the rest of the conditions of the computer science policy hold as is.
+
+### Avatar names, pseudonyms, noms de plume
+
+During the first week of class you will need to fill out the [Avatar Form](https://forms.gle/zg8A7GwdrxGLuNhE8) for your avatar name, pseudonym, whatever. This is the name that will appear on the Experience Point Google Spreadsheet that will be viewable by everyone in the class. If you wish to remain anonymous, don’t share your avatar name with anyone. To further protect the anonymity of those who wish to remain anonymous, the spreadsheet will also be populated by fictitious avatar names.
+
+
+
+
 
 
 ## **Accessibility Statement**
@@ -289,20 +331,3 @@ material is prohibited without the written permission of the instructor and othe
 are recorded. Distribution without permission is a violation of copyright law. This policy is
 consistent with [UMW’s Policy on Recording Class and Distribution of Course Materials.](https://www.boarddocs.com/va/umw/Board.nsf/goto?open&id=ATZSXG724B54)
 Academic Integrity
-
-## Honor Code Policy
-
-[Computer Science Department Honor Code Policy](https://cas.umw.edu/computerscience/cpsc-department-honor-code-policy/)
-
-The amendments to the Computer Science Department policy are as follows (the numbers related to the numbers in the policy):
-
-1. In the initial comment block of any submitted assignment, type *I hereby swear upon my word of honor that I have neither given nor received unauthorized aid on this work* followed by your name.
-2. I am more flexible than the policy "you are *not* to communicate to others in any way about your assignment." My rule of thumb is What would a responsible adult do on the job?  If you have a deadline on the job at a startup and didn't know how to do something, the responsible thing wouldn't be to sit at your workstation just getting more and more frustrated and depressed and missing the deadline. The responsible person would get whatever help was necessary to complete the task. On the other hand, a responsible person wouldn't let someone else do all the work and present it as his own. That would be a violation of this policy. (See the Slack section of the syllabus)
-3. Regarding " Remember that *giving* unauthorized help violates the Honor Code just as much as *receiving* unauthorized help does." Again, I refer to the 'responsible adult' mentioned above. I would like people to help each other but yet do the work to learn the material. Sharing a complete assignment violates this point, but helping a person debug a function is fine.
-4. Sadly, this contradicts what you want to do in your professional life. In your professional life, you want to post solutions to things you figured out as a way of helping people in the community.  In fact, we are going to be using some material people posted in this class. However, to prevent plagiarism, you will only post your material to a private github repository. Sorry.
-5. You should acknowledge the people that helped you in writing in your submission.  For example, "Ann Mulkern helped me with the code to divide the dataset into training and testing sets"
-6. All the rest of the conditions of the computer science policy hold as is.
-
-### Avatar names, pseudonyms, noms de plume
-
-During the first week of class you will need to fill out the [Avatar Form](https://forms.gle/zg8A7GwdrxGLuNhE8) for your avatar name, pseudonym, whatever. This is the name that will appear on the Experience Point Google Spreadsheet that will be viewable by everyone in the class. If you wish to remain anonymous, don’t share your avatar name with anyone. To further protect the anonymity of those who wish to remain anonymous, the spreadsheet will also be populated by fictitious avatar names.

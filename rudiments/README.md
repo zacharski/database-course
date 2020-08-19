@@ -2,7 +2,15 @@
 
 #### Submitting your code
 
-When you finish one of these tasks, you need to notify me by [filling our this form](https://forms.gle/Wymwd7ZoTvMs3vYL7)
+To submit your code you need to do four things:
+
+1. develop and test your code on your development machine (your laptop). Do a thorough job testing and debuging.
+2. save your code to Github (you should be doing this periodically as you get a new feature working)
+3. clone your github code to your Google cloud virtual machine and get it running using NGINX as a reverse proxy and pm2.
+4. test, debug, test. and test again
+5. When confident that everything is working perfectly,  notify me by [filling our this form](https://forms.gle/Wymwd7ZoTvMs3vYL7). You will need to provide the external IP of your server running on Google Cloud, and the link to your github repository.
+
+
 
 | Task | Lesson                                             |
 | ---: | :------------------------------------------------- |

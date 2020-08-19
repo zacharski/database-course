@@ -4,7 +4,14 @@ You are going to be writing Javascript server side code to support people signin
 
 Postman File: [workshop1_postman_collection.json](http://zacharski.org/files/courses/cs350/workshop1_postman_collection.json)
 
+### Prerequisite Tasks
 
+Task | Description
+:--: | :--:
+[Task 1](../../tasks/tasks1) | Getting started with PostgreSQL
+[Task 2](../../tasks/task2) | Getting started with Javascript
+[Task 3](../../tasks/task3) | Your first nodeJS server
+[Task 4](../../tasks/task4) | NodeJS and PostgreSQL
 
 ## Some Guidance
 
