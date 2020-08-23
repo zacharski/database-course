@@ -31,7 +31,7 @@ See the description of the study groups on the [What to expect page](https://git
 
 ### Instructor availability
 
-I will be sitting at my laptop on the Slack channel on Monday through Wednesdays from 11am until 2pm ET. This means that if you message me, I will respond  immediately unless I am helping another student. Excluding those times, my next level of availability is Monday through Thursday from 11am to 4pm. My average response time during that period is 15 minutes. Feel free to message me outside of those times but my response delay might be significant. Often I turn off Slack notifications at midnight. There may be times during Friday through Sunday when I don't have cell coverage and I will not be able to receive your message.
+I will be sitting at my laptop on the [UMW Database Slack workspace](http://umwdatabaseclass.slack.com) on Monday through Wednesdays from 11am until 2pm ET. This means that if you message me, I will respond  immediately unless I am helping another student. Excluding those times, my next level of availability is Monday through Thursday from 11am to 4pm. My average response time during that period is 15 minutes. Feel free to message me outside of those times but my response delay might be significant. Often I turn off Slack notifications at midnight. There may be times during Friday through Sunday when I don't have cell coverage and I will not be able to receive your message.
 
 The above hours may be subject to change if other times benefit more students. These changes will be announced in the Slack channel.
 
