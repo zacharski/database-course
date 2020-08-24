@@ -24,7 +24,7 @@ You should already have solid git skills from other courses you have taken and t
 
 1. The `README.md` markdown file, as shown above. includes your name, email address, one or more Markdown headers, and a short sentence or two. 
 
-2. `.gitignore` - Github will automatically create this file if you select  the  `.gitignore` option when you create the repository. Please select the JavaScript option of it.
+2. `.gitignore` - Github will automatically create this file if you select  the  `.gitignore` option when you create the repository. Please select the `node` option of it.
 
 3. The five folders are ones you create and should be named
 
@@ -42,7 +42,7 @@ You should already have solid git skills from other courses you have taken and t
 
 
 
-When you finish and push your changes, add me as a contributor so I have access to your code:
+When you finish and push your changes, add me (username zacharski) as a contributor so I have access to your code:
 
 
 
