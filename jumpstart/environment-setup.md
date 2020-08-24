@@ -107,7 +107,7 @@ npm --version
 
 #### on Ubuntu and Ubuntu on Windows
 
-There is a information on installing postgreSQL on the [Inquiryum  Getting Started with PostgreSQL video]([http://inquiryum.com/modules/sql%20module/Postgres-Getting-Started/](http://inquiryum.com/modules/sql module/Postgres-Getting-Started/))
+There is a information on installing postgreSQL on the [Inquiryum  Getting Started with PostgreSQL video](http://inquiryum.com/modules/sql%20module/Postgres-Getting-Started/)
 
 #### on Mac OSX
 
