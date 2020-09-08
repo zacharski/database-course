@@ -166,16 +166,16 @@ Again, the class is work-at-your-own pace, but we provide a suggested schedule b
 Week | Date | Unit | Topics
 --: | :--- | :--- | :---
 1 | 24 Aug | Intro | Intro, MVC, RESTful, Gitlab lab 
-2 | 31 Aug | SQL | creating and inserting data into a database 
-3 | 7 Sep | SQL           |Update, alter, delete 
-4 | 14 Sep | JavaScript | Intro to JavaScript 
-5 | 21 Sep |JavaScript |NodeJS, using PostgreSQL with Node
-6 | 28 Sep | Deployment | Google Cloud, Nginx reverse proxy 
-7 | 5 Oct | SQL           |3NF, joins
-8 | 12 Oct | SQL           |transactions
-9 | 19 Oct | JavaScript |Intro to React and Nextjs
-10 | 26 Oct | JavaScript | Full Stack Web Development 
-11 | 2 Nov |JavaScript |cookies
+2 | 31 Aug | SQL | creating and inserting data into a databas. Update, alter, delete 
+3 | 7 Sep | Javascript  | Intro to Javascript                                          
+4 | 14 Sep | JavaScript | NodeJS, using PostgreSQL with Node                           
+5 | 21 Sep |Deplayment |Google Cloud, Nginx reverse proxy
+6 | 28 Sep | SQL | 3NF, joins 
+7 | 5 Oct | SQL           |transactions
+8 | 12 Oct | Javascript  |Intro to React and Nextjs
+9 | 19 Oct | JavaScript |Full Stack Web Development
+10 | 26 Oct | JavaScript | cookies 
+11 | 2 Nov |JavaScript |-
 12 | 9 Nov | ElasticSearch | noSQL, Elastic Search 
 13 | 16 Nov  | Projects      | -                                           
 14 | 23 Nov | Projects      | -                                           
@@ -190,11 +190,11 @@ Meeting the hard deadlines should put you around a C for the course. To be consi
 |    1 | 24 Aug | -                       | -                            |
 |    2 | 31 Aug | -                       | -                            |
 |    3 | 7 Sep  | -                       | -                            |
-|    4 | 14 Sep | Project 1 - Workshop    | -                            |
-|    5 | 21 Sep | Project 2 - Workshop v2 | -                            |
-|    6 | 28 Sep | -                       | Project 1 - Workshop         |
-|    7 | 5 Oct  | Project 3 - NextJS      | -                            |
-|    8 | 12 Oct | -                       | -                            |
+|    4 | 14 Sep | -                       | -                            |
+|    5 | 21 Sep | Project 1 - Workshop    | -                            |
+|    6 | 28 Sep | Project 2 - Workshop v2 | -                            |
+|    7 | 5 Oct  | -                       | Project 1 - Workshop         |
+|    8 | 12 Oct | Project 3 - NextJS      | -                            |
 |    9 | 19 Oct | Project 4 - Nutrition   | Project 2 - Workshop v2      |
 |   10 | 26 Oct | -                       | -                            |
 |   11 | 2 Nov  | Project 5 - TBD         | -                            |
@@ -203,7 +203,7 @@ Meeting the hard deadlines should put you around a C for the course. To be consi
 |   14 | 23 Nov | -                       | Project 4 - Complete Web App |
 |   15 | 30 Nov | Elasticsearch           | -                            |
 
-### 
+
 
 
 
