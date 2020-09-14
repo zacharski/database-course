@@ -134,7 +134,7 @@ When we run the associated Postman query we see that it passed all the tests.
 
 Now we reach a request that is incomplete, the /search one. When we run the code in Postman we get
 
-![](../../jumpstart/pics/postman77.png)
+![](../../jumpstart/pics/postman88.png)
 
 We see it fails all tests. Your task is to complete the code in `server3.js` so it passes the tests.
 
