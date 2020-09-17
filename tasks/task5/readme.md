@@ -240,7 +240,7 @@ So the contents of the `div` will only appear if there is `parkInfo`.  Within th
 If you look at the image above you will notices that the value of acres is a string, not an integer. We can convert that to a number using `parseInt`. So, for example
 
 ```
-console.log(parseInit('123456') * 100)
+console.log(parseInt('123456') * 100)
 ```
 
 will print out 12345600
@@ -248,7 +248,7 @@ will print out 12345600
 Next we would like it to print nicely, with commas like 12,345,600. To do that we can use `toLocaleString()`
 
 ```
-console.log((parseInit('123456') * 100).toLocaleString()) 
+console.log((parseInt('123456') * 100).toLocaleString()) 
 ```
 
 will print
