@@ -521,13 +521,23 @@ This will display a command you need to execute as root. Mine looked like:
 sudo env PATH=$PATH:/home/ron_zacharski_gmail_com/.nvm/versions/node/v12.18.3/bin /home/ron_zacharski_gmail_com/.nvm/versions/node/v12.18.3/lib/node_modules/pm2/bin/pm2 startup systemd -u ron_zacharski_gmail_com --hp /home/ron_zacharski_gmail_com
 ```
 
-This will create a systemd unit (a resource systemd knows how to handle) which runs `pm2` when the system boots. pm2 in turn starts your server4 process.  We can check the status of this unit with
+This will create a systemd unit (a resource systemd knows how to handle) which runs `pm2` when the system boots. pm2 in turn starts your server4 process.  We can check that pm2 is on the startup list with
 
 
 
 ```
-systemctl status pm2
+systemctl list-units | grep pm2
 ```
+
+you should see something like
+
+
+
+```
+pm2-ron_zacharski_gmail_com.service           loaded active running   PM2 process manager 
+```
+
+
 
 #### basic commands
 
