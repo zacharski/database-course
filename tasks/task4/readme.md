@@ -40,7 +40,7 @@ For the gitlab lab we created our own git repository. We want to copy the task4 
 
 ### step 2 add a .env file with the following information
 
-In the `task1` directory you need to add a file name `.env` with the contents:
+In the `task4` directory you need to add a file name `.env` with the contents:
 `
 DB_HOST=localhost
 DB_USER=postgres
