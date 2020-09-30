@@ -1,5 +1,19 @@
 # Database and Backend Developer Course 
 
+### essentials
+
+
+\# | resource
+--: | :---
+1 | [The current version of this syllabus](https://github.com/zacharski/database-course)
+2 | [Welcome Video](https://youtu.be/WSYTu3fCc1Q)
+3 | [What should you do the first week](https://github.com/zacharski/database-course/tree/master/jumpstart) 
+4 | Instructor: Ron Zacharski ron.zacharski@gmail.com, 575.680.4041
+5| [Experience Point Sheet](https://docs.google.com/spreadsheets/d/1UGGA8cjL4WEZ9N8AQGe8NW4So3p8aI_Umiww-Z3C8SY/edit?usp=sharing)
+6 | The [UMW Database Slack Workspace](https://umwdatabaseclass.slack.com/)
+
+
+
 
 ## Course Description
 
@@ -7,15 +21,17 @@ This course provides an introduction to databases and backend web development.  
 
 ### An asynchronous online class
 
-This class is asynchronous meaning there is no mandatory real-time interaction. You will be working through the Inquiryum Backend Developer Fundamentals Course. You can watch the videos anytime you want. You can play them at a faster speed, you can rewatch them or pause them. You can work on  the course material in 20 minute blocks throughout a day, or devote a large contiguous block of time once per week. When you need help you can use the class Slack channel to get assistance from me or your classmates. If you are really stuck we can arrange a screen sharing Zoom call. 
+This class is asynchronous meaning there is no mandatory real-time interaction. You will be working through the Inquiryum Backend Developer Fundamentals Course. You can watch the videos anytime you want. You can play them at a faster speed, you can rewatch them or pause them. You can work on  the course material in 20 minute blocks throughout a day, or devote a large contiguous block of time once per week. When you need help you can use the class Slack channel to get assistance from me or your classmates.  
 
 The advantages of this approach is that it allows you great flexibility in when you want to work on the material and for how long. And, as described below under mastery learning, it allows you to work at your own pace.
 
+### Optional Zoom Study Groups
 
+See the description of the study groups on the [What to expect page](https://github.com/zacharski/database-course/blob/master/jumpstart/what_to_expect.md).
 
 ### Instructor availability
 
-I will be sitting at my laptop on the Slack channel on Monday and Wednesdays from 10am until 2pm. This means that if you message me, I will respond  immediately unless I am helping another student. Excluding those times, my next level of availability is Monday through Thursday from 11am to 4pm. My average response time during that period is 10 minutes. Feel free to message me outside of those times but my response delay might be significant. Often I turn off Slack notifications at midnight. There may be times during Friday through Sunday when I don't have cell coverage and I will not be able to receive your message.
+I will be sitting at my laptop on the [UMW Database Slack workspace](http://umwdatabaseclass.slack.com) on Monday through Wednesdays from 11am until 2pm ET. This means that if you message me, I will respond  immediately unless I am helping another student. Excluding those times, my next level of availability is Monday through Thursday from 11am to 4pm. My average response time during that period is 15 minutes. Feel free to message me outside of those times but my response delay might be significant. Often I turn off Slack notifications at midnight. There may be times during Friday through Sunday when I don't have cell coverage and I will not be able to receive your message.
 
 The above hours may be subject to change if other times benefit more students. These changes will be announced in the Slack channel.
 
@@ -49,7 +65,7 @@ Students should be able to
 
 ### HTML/CSS
 
-HTML and CSS defines the user interface of a web application. Understanding both are are of major importance to web developers.
+HTML and CSS define the user interface of a web application. Understanding both are are of major importance to web developers.
 
 Students should be able to
 
@@ -67,19 +83,29 @@ The majority of effort in the course is in working on tasks and project, which h
 
 ### Tasks
 
-* Closely mirrors the examples shown in the course videos.
-* Generally the majority of the code is provided for you.
+* Closely mirror the examples shown in the course videos.
+* The majority of the code is provided to you.
 * Where appropriate, test code is also provided enabling you to get instant feedback.
 * You are to:
   * write a small amount of code to complete the task
   * evaluate what you have done by running the tests
 
+Tasks are evaluated on a five tier system.
 
+* **tier 1** the task code works and all code is 100% correct.
+* **tier 2** around 90% of the task code works and there are a few coding errors.
+* **tier 3** most of the task code works and there are coding errors.
+* **tier 4** some element works correctly but there are significant errors.
+* **tier 5** the code mostly does not work or was not submitted. 
+
+For example, if a task is worth 20 points, you might get 20 for tier 1, 16 for tier 2, 12 for tier 3, 8 for tier 4 and zero for tier 5. 
+
+You can submit up to two tasks per week.
 
 ### Projects
 
-* Follows examples shown in the course videos.
-* Builds off of concepts and skills you learned completing prerequisite tasks.
+* Follow examples shown in the course videos.
+* Build off of concepts and skills you learned completing prerequisite tasks.
 * Project definition provides either
   * an API specification and test file
   * a video showing an example of a completed project
@@ -89,21 +115,17 @@ The majority of effort in the course is in working on tasks and project, which h
   * test and evaluate you code.
   * move you code to a production environment.
 
-Both tasks and projects are evaluated as to whether the code works or not (passes the necessary tests). If it does not you will fix your code and resubmit. You can submit as many times as necessary to pass the tests. The test set that is used to evaluate your code may be larger than that given to you to aid you in development. For some projects there are optional parts for which you will get additional points.
+Projects are evaluated as to whether the code works or not (passes the necessary tests). If it does not you will fix your code and resubmit. You can submit as many times as necessary to pass the tests. The test set that is used to evaluate your code may be larger than that given to you to aid you in development. For some projects there are optional parts for which you will get additional points.
 
-You must complete the prerequisite tasks before starting a project and you cannot demo more than 2 projects per week.
+You must complete the prerequisite tasks before starting a project and you cannot submit more than 2 projects per week.
 
 
 
 ## Core Competency Task
 
-Often when you are applying for a job, you are given a timed programming task. The core competency task is designed to help you prepare for this. The tasks involves writing a backend for a web service in JavaScript and PostgreSQL. You can take the test at any time (after you meet the prerequisites), but once you start you will have four hours to complete it.
+Often when you are applying for a job, you are given a timed programming task. The core competency task is designed to help you prepare for this. The tasks involves writing a backend for a web service in JavaScript and PostgreSQL. You can take the test at any time (after you meet the prerequisites), but once you start you will have four hours to complete it. By *any time* I mean that you can decide to take it at 1 in the afternoon on a particular Tuesday, or 1am on a Sunday morning.
 
 
-
-## Oral Exam (optional)
-
-The oral exam takes the form of a technical job interview related to the topics covered in the course. It is conducted over Zoom and will be around 10-20 minutes long. You can take the exam anytime after you meet the prerequisites.
 
 ## Mastery Learning
 
@@ -127,9 +149,9 @@ This course is work at your own pace. Other courses you might be taking have fix
 
 Order | Lesson
 --: | :--
-1 | [JumpStart](jumpstart/readme.md) 
-2 | [Tasks](tasks/readme.md)
-3 | [Projects](projects/readme.md)
+1 | [JumpStart](jumpstart) 
+2 | [Tasks](tasks) 
+3 | [Projects](rudiments) 
 
 
 
@@ -144,20 +166,42 @@ Again, the class is work-at-your-own pace, but we provide a suggested schedule b
 Week | Date | Unit | Topics
 --: | :--- | :--- | :---
 1 | 24 Aug | Intro | Intro, MVC, RESTful, Gitlab lab 
-2 | 31 Aug | SQL | creating and inserting data into a database 
-3 | 7 Sep | SQL           |Update, alter, delete 
-4 | 14 Sep | JavaScript | Intro to JavaScript 
-5 | 21 Sep |JavaScript |NodeJS, using PostgreSQL with Node
-6 | 28 Sep | Deployment | Google Cloud, Nginx reverse proxy 
-7 | 5 Oct | SQL           |3NF, joins
-8 | 12 Oct | SQL           |transactions
-9 | 19 Oct | JavaScript |Intro to React and Nextjs
-10 | 26 Oct | JavaScript | Full Stack Web Development 
-11 | 2 Nov |JavaScript |cookies
+2 | 31 Aug | SQL | creating and inserting data into a databas. Update, alter, delete 
+3 | 7 Sep | Javascript  | Intro to Javascript                                          
+4 | 14 Sep | JavaScript | NodeJS, using PostgreSQL with Node                           
+5 | 21 Sep |Deplayment |Google Cloud, Nginx reverse proxy
+6 | 28 Sep | SQL | 3NF, joins 
+7 | 5 Oct | SQL           |transactions
+8 | 12 Oct | Javascript  |Intro to React and Nextjs
+9 | 19 Oct | JavaScript |Full Stack Web Development
+10 | 26 Oct | JavaScript | cookies 
+11 | 2 Nov |JavaScript |-
 12 | 9 Nov | ElasticSearch | noSQL, Elastic Search 
 13 | 16 Nov  | Projects      | -                                           
 14 | 23 Nov | Projects      | -                                           
 15 | 30 Nov | Projects      | - 
+
+### Deadlines hard and soft
+
+Meeting the hard deadlines should put you around a C for the course. To be considered to be on time for a hard deadline, the code must be submitted before the date indicated.
+
+| Week | Date   | Recommended             | Hard deadline                |
+| ---: | :----- | :---------------------- | :--------------------------- |
+|    1 | 24 Aug | -                       | -                            |
+|    2 | 31 Aug | -                       | -                            |
+|    3 | 7 Sep  | -                       | -                            |
+|    4 | 14 Sep | -                       | -                            |
+|    5 | 21 Sep | Project 1 - Workshop    | -                            |
+|    6 | 28 Sep | Project 2 - Workshop v2 | -                            |
+|    7 | 5 Oct  | -                       | Project 1 - Workshop         |
+|    8 | 12 Oct | Project 3 - NextJS      | -                            |
+|    9 | 19 Oct | Project 4 - Nutrition   | Project 2 - Workshop v2      |
+|   10 | 26 Oct | -                       | -                            |
+|   11 | 2 Nov  | Project 5 - TBD         | -                            |
+|   12 | 9 Nov  | -                       | Project 3 - NextJS           |
+|   13 | 16 Nov | Project 6 - TBD         | -                            |
+|   14 | 23 Nov | -                       | Project 4 - Complete Web App |
+|   15 | 30 Nov | Elasticsearch           | -                            |
 
 
 
@@ -179,7 +223,7 @@ Slack is a work chat application that many tech companies use. We are going to b
 
 
 
-[Sign up for Slack here](https://join.slack.com/t/umwdatabaseclass/shared_invite/enQtOTAzNzMyNDkyODY0LWRmNzkxYWM2YTM0ZTQ1Y2M5YzZiMGU1NzRmNjEwOGI3ZjMzMzJmNGFhYjdhNTAzM2U0YzM3Y2QwOWFkZmE0MzE).
+[Sign up for Slack here](https://join.slack.com/t/umwdatabaseclass/shared_invite/zt-ghwsee5i-aA8KlDiJGP_up9f3kK_eqg).
 
 ## Okay but how do I pass?
 
@@ -203,15 +247,36 @@ Here are the ways of earning XP:
 
 * there will be at least 7 tasks. On average each will be worth 20xp
 
-* there are 6 PostgreSQL projects. Each is worth 100xp
+* there are 6 PostgreSQL projects. Each is worth 125xp
 
 * there is an ElasticSearch project worth 150xp
 
 * the core competency programming challenge is worth 150xp
 
-* the optional oral exam is worth 150xp
-
   
+
+
+## Honor Code Policy
+
+[Computer Science Department Honor Code Policy](https://cas.umw.edu/computerscience/cpsc-department-honor-code-policy/)
+
+The amendments to the Computer Science Department policy are as follows (the numbers related to the numbers in the policy):
+
+1. In the initial comment block of any submitted assignment, type *I hereby swear upon my word of honor that I have neither given nor received unauthorized aid on this work* followed by your name.
+2. I am more flexible than the policy "you are *not* to communicate to others in any way about your assignment." My rule of thumb is What would a responsible adult do on the job?  If you have a deadline on the job at a startup and didn't know how to do something, the responsible thing wouldn't be to sit at your workstation just getting more and more frustrated and depressed and missing the deadline. The responsible person would get whatever help was necessary to complete the task. On the other hand, a responsible person wouldn't let someone else do all the work and present it as his own. That would be a violation of this policy. (See the Slack section of the syllabus)
+3. Regarding " Remember that *giving* unauthorized help violates the Honor Code just as much as *receiving* unauthorized help does." Again, I refer to the 'responsible adult' mentioned above. I would like people to help each other but yet do the work to learn the material. Sharing a complete assignment violates this point, but helping a person debug a function is fine.
+4. Sadly, this contradicts what you want to do in your professional life. In your professional life, you want to post solutions to things you figured out as a way of helping people in the community.  In fact, we are going to be using some material people posted in this class. However, to prevent plagiarism, you will only post your material to a private github repository. Sorry.
+5. You should acknowledge the people that helped you in writing in your submission.  For example, "Ann Mulkern helped me with the code to divide the dataset into training and testing sets"
+6. All the rest of the conditions of the computer science policy hold as is.
+
+### Avatar names, pseudonyms, noms de plume
+
+During the first week of class you will need to fill out the [Avatar Form](https://forms.gle/zg8A7GwdrxGLuNhE8) for your avatar name, pseudonym, whatever. This is the name that will appear on the Experience Point Google Spreadsheet that will be viewable by everyone in the class. If you wish to remain anonymous, don’t share your avatar name with anyone. To further protect the anonymity of those who wish to remain anonymous, the spreadsheet will also be populated by fictitious avatar names.
+
+
+
+
+
 
 ## **Accessibility Statement**
 
@@ -234,7 +299,7 @@ Fairfax House
 540-654-5656
 toldfiel@umw.edu
 
-nearlyMyranda Thomson
+Myranda Thomson
 Title IX Deputy for Students
 Area Coordinator
 540-654-1184
@@ -244,7 +309,7 @@ mthomson@umw.edu
 
 *On Campus*
 
-JavascriptTalley Center for Counselling Services
+Talley Center for Counseling Services
 Lee Hall 106
 
 Student Health Center
@@ -260,12 +325,11 @@ RCASA
 
 ## Recording Policy
 
-Classroom activities in this course may be recorded by students enrolled in the course for the
+Classroom material in this course may be copied by students enrolled in the course for the
 personal, educational use of that student or for all students presently enrolled in the class only,
 and may not be further copied, distributed, published or otherwise used for any other purpose
-without the express written consent of the course instructor. All students are advised that
-classroom activities may be taped by students for this purpose. Distribution or sale of class
-recordings is prohibited without the written permission of the instructor and other students who
+without the express written consent of the course instructor.  Distribution or sale of class
+material is prohibited without the written permission of the instructor and other students who
 are recorded. Distribution without permission is a violation of copyright law. This policy is
 consistent with [UMW’s Policy on Recording Class and Distribution of Course Materials.](https://www.boarddocs.com/va/umw/Board.nsf/goto?open&id=ATZSXG724B54)
 Academic Integrity

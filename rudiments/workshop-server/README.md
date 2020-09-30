@@ -4,13 +4,31 @@ You are going to be writing Javascript server side code to support people signin
 
 Postman File: [workshop1_postman_collection.json](http://zacharski.org/files/courses/cs350/workshop1_postman_collection.json)
 
+### Prerequisite Tasks
 
+Task | Description
+:--: | :--:
+[Task 1](../../tasks/tasks1) | Getting started with PostgreSQL
+[Task 2](../../tasks/task2) | Getting started with Javascript
+[Task 3](../../tasks/task3) | Your first nodeJS server
+[Task 4](../../tasks/task4) | NodeJS and PostgreSQL
 
 ## Some Guidance
 
-You should first get this running on your development machine (your laptop). By 'get this running' we mean  that you write the code using your favorite code editor on your laptop (for example, VS Code). You have PostgreSQL installed on your laptop and you load in the SQL file you wrote. You execute the JavaScript code using node. And finally you test the code using Postman. You should get things running perfectly on your development machine before moving your project to the production environment.
+You should first get this running on your development machine (your laptop). By 'get this running' we mean  that you write the code using the VS Code editor on your laptop. You have PostgreSQL installed on your laptop and you load in the SQL file you wrote. You execute the JavaScript code using node. And finally you test the code using Postman. You should get things running perfectly on your development machine before moving your project to the production environment.
 
-It is generally not good practice to sftp or copy files some other way from your development machine to production. Use a git repo (for example, gitlab) as an intermediary.
+It is generally not good practice to sftp or copy files some other way from your development machine to production. Use a git repo (your github repository) as an intermediary.
+
+#### Production Machine
+
+You need to get your code running on Google Cloud with the following requirements
+
+* Your code should be running using pm2
+* You should be using an NGINX reverse proxy server running on port 80. So if your ip is 35.225.191.135 you should just be able to point your browser to 35.225.191.135 without specifying a port. For information on both pm2 and NGINX see [How To Set Up a Node.js Application for Production on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-20-04)
+
+You should test that your code is running correctly on your production machine using Postman.
+
+Once your code is on github and also running on a Google Cloud VM, notify the instructor
 
 ## Requirements:
 

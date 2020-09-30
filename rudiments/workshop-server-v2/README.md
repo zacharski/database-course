@@ -2,7 +2,7 @@
 
 workshop-server-v2
 
-
+[Postman File](workshopServer2.postman_collection.json)
 
 
 

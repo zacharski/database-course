@@ -1,0 +1,704 @@
+{
+	"info": {
+		"_postman_id": "38a6691d-7d8f-4c98-af54-72169eecb23e",
+		"name": "Task4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search Magdalena",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c062b797-bccd-4935-a065-f92ecbd04d70",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Checking Array\"] = data.result.indexOf('Very Large Array') != -1;",
+							"tests[\"Checking Ghost Town\"] = data.result.indexOf('Kelly Ghost Town') != -1;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/searchAttractions?town=Magdalena, NM",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"searchAttractions"
+					],
+					"query": [
+						{
+							"key": "town",
+							"value": "Magdalena, NM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add attraction",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4318d3f4-cb63-4556-a630-f25942f43858",
+						"exec": [
+							"",
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.status).to.eql('added');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Chaco Culture",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Nageezi, NM",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "https://www.nps.gov/chcu/index.htm",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/addAttraction",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"addAttraction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add attraction again",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "129ab5d7-91d7-4083-9bb3-56581199bb83",
+						"exec": [
+							"",
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.status).to.eql('attraction already in database');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Chaco Culture",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Nageezi, NM",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "https://www.nps.gov/chcu/index.htm",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/addAttraction",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"addAttraction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search Nageezi",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "be26f5b7-a447-40fd-a298-2097769f1cf9",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Checking Chaco\"] = data.result.indexOf('Chaco Culture') != -1;",
+							"tests[\"Checking Ghost Town\"] = data.result.length  == 1;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/searchAttractions?town=Nageezi, NM",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"searchAttractions"
+					],
+					"query": [
+						{
+							"key": "town",
+							"value": "Nageezi, NM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list all",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d26b9220-b6e0-4b58-8b7d-e2849b795769",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Checking Three Rivers Campground\"] = data.campgrounds.indexOf('Three Rivers Campground') != -1;",
+							"tests[\"Apache Creek\"] = data.campgrounds.indexOf('Apache Creek') != -1;",
+							"tests[\"Bear Trap Campground\"] = data.campgrounds.indexOf('Bear Trap Campground') != -1;",
+							"tests[\"Valley of Fires Recreation Area\"] = data.campgrounds.indexOf('Valley of Fires Recreation Area') != -1;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/listAll",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"listAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search Three Rivers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2db2d91c-1706-4d3b-b79f-40602282ee62",
+						"exec": [
+							"",
+							"",
+							"var data = JSON.parse(responseBody);",
+							"console.log(data);",
+							"tests[\"Three Rivers Petroglyph Sited\"] = check('Three Rivers Petroglyph Site',  'Lincoln, NM', 25, data.campgrounds);",
+							"//tests[\"Valley of Fires Recreation Area\"] = check('Valley of Fires Recreation Area', 'Carrizozo, NM', 38, data.campgrounds);",
+							"tests[\"South Fork Campground\"] = ! check('South Fork Campground', 'Nogal, NM', 19, data.campgrounds);",
+							"//tests[\"List Users 2\"] = data.workshops.indexOf('React Fundamentals') != -1;",
+							"",
+							"function check(campground, location, maxLength, data) {",
+							"    var i, len = data.length;",
+							"    var result = 0;",
+							"    for (i = 0; i < len; i++) {",
+							"        if (data[i] && (data[i].campground == campground) && (data[i].location == location) && (data[i].maxlength == maxLength)) {",
+							"            result = 1;",
+							"        }",
+							"    ",
+							"    }",
+							"    return result;",
+							"}",
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/search?name=Three Rivers Petroglyph Site",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Three Rivers Petroglyph Site"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test fit",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ffee4ff9-de2a-49e0-a0f3-dd4bf15c6e94",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"console.log(data);",
+							"tests[\"Baca Campground\"] = check('Baca Campground',  'Lincoln, NM', 32, data.campgrounds);",
+							"tests[\"Valley of Fires Recreation Area\"] = check('Valley of Fires Recreation Area', 'Carrizozo, NM', 38, data.campgrounds);",
+							"tests[\"South Fork Campground\"] = ! check('South Fork Campground', 'Nogal, NM', 19, data.campgrounds);",
+							"//tests[\"List Users 2\"] = data.workshops.indexOf('React Fundamentals') != -1;",
+							"",
+							"function check(campground, location, maxLength, data) {",
+							"    var i, len = data.length;",
+							"    var result = 0;",
+							"    for (i = 0; i < len; i++) {",
+							"        if (data[i] && (data[i].campground == campground) && (data[i].location == location) && (data[i].maxLength == maxLength)) {",
+							"            result = 1;",
+							"        }",
+							"    ",
+							"    }",
+							"    return result;",
+							"}",
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/fit?length=22",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"fit"
+					],
+					"query": [
+						{
+							"key": "length",
+							"value": "22"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Elevation Higher",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4617c967-6561-4f49-9c7d-b5575bc16c44",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"console.log(data);",
+							"tests[\"Oak Grove Campground\"] = check('Oak Grove Campground',  8464, 'Alto, NM', data.campgrounds);",
+							"tests[\"Silver Campground\"] = check('Silver Campground', 8956, 'Cloudcroft, NM', data.campgrounds);",
+							"tests[\"South Fork Campground\"] = ! check('South Fork Campground', 'Nogal, NM', 19, data.campgrounds);",
+							"//tests[\"List Users 2\"] = data.workshops.indexOf('React Fundamentals') != -1;",
+							"",
+							"function check(campground, elevation, town, data) {",
+							"    var i, len = data.length;",
+							"    var result = 0;",
+							"    for (i = 0; i < len; i++) {",
+							"        if (data[i] && (data[i].campground == campground) && (data[i].elevation == elevation) && (data[i].town == town)) {",
+							"            result = 1;",
+							"        }",
+							"    ",
+							"    }",
+							"    return result;",
+							"}",
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/elevation?altitude=8000&direction=higher",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"elevation"
+					],
+					"query": [
+						{
+							"key": "altitude",
+							"value": "8000"
+						},
+						{
+							"key": "direction",
+							"value": "higher"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Elevation Lower",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9b7a320b-e06b-44f0-a890-6c45eac197e9",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"console.log(data);",
+							"tests[\"Three Rivers Petroglyph Site\"] = check('Three Rivers Petroglyph Site',  4986, 'Lincoln, NM', data.campgrounds);",
+							"tests[\"Valley of Fires Recreation Area\"] = check('Valley of Fires Recreation Area', 5249, 'Carrizozo, NM', data.campgrounds);",
+							"tests[\"South Fork Campground\"] = ! check('South Fork Campground', 'Nogal, NM', 19, data.campgrounds);",
+							"//tests[\"List Users 2\"] = data.workshops.indexOf('React Fundamentals') != -1;",
+							"",
+							"function check(campground, elevation, town, data) {",
+							"    var i, len = data.length;",
+							"    var result = 0;",
+							"    for (i = 0; i < len; i++) {",
+							"        if (data[i] && (data[i].campground == campground) && (data[i].elevation == elevation) && (data[i].town == town)) {",
+							"            result = 1;",
+							"        }",
+							"    ",
+							"    }",
+							"    return result;",
+							"}",
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/elevation?altitude=6000&direction=lower",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"elevation"
+					],
+					"query": [
+						{
+							"key": "altitude",
+							"value": "6000"
+						},
+						{
+							"key": "direction",
+							"value": "lower"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Campground",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f8c622e3-4509-4572-bf0d-878d2e758b40",
+						"exec": [
+							"",
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.status).to.eql('added');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Juniper' Campground",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Quemado, NM",
+							"type": "text"
+						},
+						{
+							"key": "maxlength",
+							"value": "40",
+							"type": "text"
+						},
+						{
+							"key": "elevation",
+							"value": "7677",
+							"type": "text"
+						},
+						{
+							"key": "sites",
+							"value": "18",
+							"type": "text"
+						},
+						{
+							"key": "pad",
+							"value": "gravel",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/addCampground",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"addCampground"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Campground Different City",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6deccf05-48c0-4e32-8023-e66df8b070d9",
+						"exec": [
+							"",
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.status).to.eql('added');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Juniper' Campground",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Mecalero, NM",
+							"type": "text"
+						},
+						{
+							"key": "maxlength",
+							"value": "19",
+							"type": "text"
+						},
+						{
+							"key": "elevation",
+							"value": "8712",
+							"type": "text"
+						},
+						{
+							"key": "sites",
+							"value": "18",
+							"type": "text"
+						},
+						{
+							"key": "pad",
+							"value": "dirt",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/addCampground",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"addCampground"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Campground Again",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "29a37c3d-7a79-43a2-a9fc-8f6f4e6a0b1f",
+						"exec": [
+							"",
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.status).to.eql('campground already in database');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Juniper' Campground",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Quemado, NM",
+							"type": "text"
+						},
+						{
+							"key": "maxlength",
+							"value": "40",
+							"type": "text"
+						},
+						{
+							"key": "elevation",
+							"value": "7677",
+							"type": "text"
+						},
+						{
+							"key": "sites",
+							"value": "18",
+							"type": "text"
+						},
+						{
+							"key": "pad",
+							"value": "gravel",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/addCampground",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"addCampground"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search Juniper",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c31c10d8-7855-4861-ac3c-461e3c6292fb",
+						"exec": [
+							"",
+							"",
+							"var data = JSON.parse(responseBody);",
+							"console.log(data);",
+							"tests[\"Juniper 1d\"] = check(\"Juniper' Campground\",  'Quemado, NM', 40, data.campgrounds);",
+							"//tests[\"Valley of Fires Recreation Area\"] = check('Valley of Fires Recreation Area', 'Carrizozo, NM', 38, data.campgrounds);",
+							"tests[\"South Fork Campground\"] = ! check(\"Juniper' Campground\", 'Mescalero, NM', 19, data.campgrounds);",
+							"//tests[\"List Users 2\"] = data.workshops.indexOf('React Fundamentals') != -1;",
+							"",
+							"function check(campground, location, maxLength, data) {",
+							"    var i, len = data.length;",
+							"    var result = 0;",
+							"    for (i = 0; i < len; i++) {",
+							"        if (data[i] && (data[i].campground == campground) && (data[i].location == location) && (data[i].maxlength == maxLength)) {",
+							"            result = 1;",
+							"        }",
+							"    ",
+							"    }",
+							"    return result;",
+							"}",
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/search?name=Juniper' Campground",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Juniper' Campground"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

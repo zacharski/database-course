@@ -192,9 +192,78 @@ const roles = (book) => {
 
 
 
- 
+ To help you with this consider the following array of json objects:
+
+```
+const dogs = [
+  { name: "Roper", breed: "Border Collie", color: "black" },
+  { name: "Clyde", breed: "Lab", color: "chocolate" },
+  { name: "Roz", breed: "Standard Poodle", color: "chocolate" },
+  { name: "Dido", breed: "Border Collie", color: "black" },
+  { name: "Merce", breed: "Standard Poodle", color: "white" },
+  { name: "Sparky", breed: "Standard Poodle", color: "red" },
+  { name: "Bo", breed: "Portuguese Water Dog", color: "black" },
+  { name: "Sunny", breed: "Portuguese Water Dog", color: "black" },
+  { name: "Kiko", breed: "Border Collie", color: "black" },
+];
+```
+
+Now let's say we want a list of dog names  by breed. So something like...
+
+```
+{
+  'Border Collie': [ 'Roper', 'Dido', 'Kiko' ],
+   Lab: [ 'Clyde' ],
+  'Standard Poodle': [ 'Roz', 'Merce', 'Sparky' ],
+  'Portuguese Water Dog': [ 'Bo', 'Sunny' ]
+}
+
+```
+
+We don't want to hard code the breed names ('Border Collie', 'Lab' etc.). That would be poor programming. We want a more general function. This would work:
 
 
+
+```
+const byBreed = (dogList) => {
+  let breeds = {};
+  for (const dog of dogList) {
+    if (breeds[dog.breed]) {
+      // add to it
+      breeds[dog.breed].push(dog.name);
+    } else {
+      breeds[dog.breed] = [dog.name];
+    }
+  }
+  return breeds;
+};
+```
+
+so if we apply that function
+
+
+
+```
+console.log(byBreed(dogs));
+```
+
+
+
+we get
+
+```
+{
+  'Border Collie': [ 'Roper', 'Dido', 'Kiko' ],
+   Lab: [ 'Clyde' ],
+  'Standard Poodle': [ 'Roz', 'Merce', 'Sparky' ],
+  'Portuguese Water Dog': [ 'Bo', 'Sunny' ]
+}
+
+```
+
+
+
+Take your time and work through the function to gain an understanding.
 
 
 
