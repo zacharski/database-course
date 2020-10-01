@@ -18,5 +18,6 @@ Task | Lesson
 4 | [NodeJS and PostgreSQL](task4/readme.md)        
 5 | [NextJS](task5/readme.md)
 6| [Cookies and Hashing](task6/README.md)
+7| [Getting serious with SQL](task7/readme.md) 
 
 
