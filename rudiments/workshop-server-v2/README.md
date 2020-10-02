@@ -197,15 +197,11 @@ X-www-form-urlencoded body variables:
 
 #### Response
 
-If username not already in database:
+If username not already in database don't add anything and send:
 
-`{ "status": "user not in database"}{ "status": "user added"}`
+`{ "status": "user not in database"}`
 
-Else if workshop not already in database:
-
-`{ "status": "workshop does not exist"}`
-
-Else if workshop not already in database:
+Else if workshop not already in database don't add anything and send:
 
 `{ "status": "workshop does not exist"}`
 
