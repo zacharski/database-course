@@ -17,7 +17,8 @@ To submit your code you need to do four things:
 |    1 | [Workshop Server](workshop-server/README.md)       |
 |    2 | [Workshop Server v2](workshop-server-v2/README.md) |
 |    3 | [NextJS](nextjs)                                   |
-|    4 | [TBD]()                                            |
+|    4 | [Complete Web App](complete-web-app)               |
+|    5 | [Super Search](super-search)                       |
 
 
 
