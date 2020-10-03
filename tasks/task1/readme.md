@@ -48,11 +48,11 @@ After this, close your terminal and open it again. Now we can install `node` and
 ### step 3 add a .env file with the following information
 
 In the `task1` directory you need to add a file name `.env` with the contents:
-`
+```
 DB_HOST=localhost
 DB_USER=postgres
 DB_PASS=yourPassword
-`
+```
 
 Replace the string yourPassword with your postgres password. NOTE: It is generally a bad idea to use the root account, but since this is our first practice we are trying to keep things easy. 
 
