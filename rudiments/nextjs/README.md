@@ -6,7 +6,7 @@
 
 The provided server has only one get request:
 
-http://35.190.190.219/info?q=Apache
+http://35.190.190.219/api/info?q=Apache
 
 where `q` is the name of the campground
 

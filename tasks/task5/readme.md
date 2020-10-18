@@ -166,7 +166,7 @@ Now, when a user types something in the search box, we want to remember it by se
 The start of the function will be...
 
 ```
-async handleSearch(evt) {
+async handleUpdate(evt) {
 ```
 
 

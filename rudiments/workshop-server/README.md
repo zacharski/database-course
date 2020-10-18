@@ -12,6 +12,7 @@ Task | Description
 [Task 2](../../tasks/task2) | Getting started with Javascript
 [Task 3](../../tasks/task3) | Your first nodeJS server
 [Task 4](../../tasks/task4) | NodeJS and PostgreSQL
+[Task 4.5](../../tasks/task4.5 | Getting your Node app running on a Google VM
 
 ## Some Guidance
 
@@ -24,7 +25,7 @@ It is generally not good practice to sftp or copy files some other way from your
 You need to get your code running on Google Cloud with the following requirements
 
 * Your code should be running using pm2
-* You should be using an NGINX reverse proxy server running on port 80. So if your ip is 35.225.191.135 you should just be able to point your browser to 35.225.191.135 without specifying a port. For information on both pm2 and NGINX see [How To Set Up a Node.js Application for Production on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-20-04)
+* You should be using an NGINX reverse proxy server running on port 80. So if your ip is 35.225.191.135 you should just be able to point your browser to 35.225.191.135 without specifying a port. 
 
 You should test that your code is running correctly on your production machine using Postman.
 
