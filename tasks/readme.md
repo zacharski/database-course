@@ -19,5 +19,6 @@ Task | Lesson
 5 | [NextJS](task5/readme.md)
 6| [Cookies and Hashing](task6/README.md)
 7| [Getting serious with SQL](task7/readme.md) 
+8| [intro to Elasticsearch](task8/readme.md) 
 
 
