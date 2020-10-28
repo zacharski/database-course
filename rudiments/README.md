@@ -4,7 +4,7 @@
 
 To submit your code you need to do four things:
 
-1. develop and test your code on your development machine (your laptop). Do a thorough job testing and debuging.
+1. develop and test your code on your development machine (your laptop). Do a thorough job testing and debugging.
 2. save your code to Github (you should be doing this periodically as you get a new feature working)
 3. clone your github code to your Google cloud virtual machine and get it running using NGINX as a reverse proxy and pm2.
 4. test, debug, test. and test again
