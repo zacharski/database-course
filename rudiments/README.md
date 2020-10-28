@@ -20,6 +20,7 @@ To submit your code you need to do four things:
 |    4 | [Complete Web App](complete-web-app)               |
 |    5 | [Super Search](super-search)                       |
 |    6 | [Core Competency](core_competency.md)              |
+|    7 | [Elasticsearch](elasticsearch)                     |
 
 
 
