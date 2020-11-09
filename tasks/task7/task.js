@@ -6,33 +6,6 @@ console.log(QUERY.query1);
 
 const Pool = require("pg").Pool;
 
-// YOUR TASK
-//  query 1: We want the titles and running time, of all the movies whose running time is less than 100 minutes.
-//           Ordered by the shortest movie first.
-//
-//const query1 = "SELECT * FROM movies";
-//
-// query 2: We want the titles of all the movies whose title ends with the letter 'e' ordered alphabetically
-//
-//const query2 = "";
-//
-// query 3: for each genre, the total boxoffice. Ordered by box office total.
-//          The column with that total should be labeled total_boxoffice. So something that returns:
-//
-//        genre    | total_boxoffice
-//    -------------+-----------------
-//      Documentary |             3.2
-//      Horror      |            13.8
-//      Drama       |            29.9
-//      Comedy      |           370.6
-//      Animation   |           968.5
-//      Action      |         3853.27
-const query3 = "";
-//
-// query 4: print out the title and boxoffice of the movie with the highest boxoffice.
-//
-const query4 = "";
-
 const movies = async (req, res) => {
   const config = {
     host: process.env.DB_HOST,
