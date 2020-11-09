@@ -6,7 +6,7 @@
 
 #### Prerequisite: completion of workshop v1 and v2
 
-### You will have 4 hours to complete this task.
+### You will have 6 hours to complete this task.
 
 
 
