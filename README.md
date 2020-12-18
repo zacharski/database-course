@@ -9,7 +9,7 @@
 2 | [Welcome Video](https://youtu.be/WSYTu3fCc1Q)
 3 | [What should you do the first week](https://github.com/zacharski/database-course/tree/master/jumpstart) 
 4 | Instructor: Ron Zacharski ron.zacharski@gmail.com, 575.680.4041
-5| [Experience Point Sheet](https://docs.google.com/spreadsheets/d/1UGGA8cjL4WEZ9N8AQGe8NW4So3p8aI_Umiww-Z3C8SY/edit?usp=sharing)
+5| [Experience Point Sheet](https://docs.google.com/spreadsheets/d/1QbIEZTDdazrk35U9Xw1dznYRI9sKKKP5dg5RaQB0G5g/edit?usp=sharing) 
 6 | The [UMW Database Slack Workspace](https://umwdatabaseclass.slack.com/)
 
 
@@ -90,17 +90,16 @@ The majority of effort in the course is in working on tasks and project, which h
   * write a small amount of code to complete the task
   * evaluate what you have done by running the tests
 
-Tasks are evaluated on a five tier system.
+Tasks are evaluated on a four tier system.
 
-* **tier 1** the task code works and all code is 100% correct.
-* **tier 2** around 90% of the task code works and there are a few coding errors.
-* **tier 3** most of the task code works and there are coding errors.
-* **tier 4** some element works correctly but there are significant errors.
-* **tier 5** the code mostly does not work or was not submitted. 
+* **tier 1** the task code works and all code is 100% correct. The code is formatted correctly (indentation follows programming standards, comments when needed, no debugging print statements remain, no old code lines commented.)  - (100% xp)
+* **tier 2** the task code works and all code is 100% correct. However, the code is not formatted correctly -(65-75% xp)
+* **tier 3** most of the task code works. However, there are coding errors or missing functions. - (25-50% xp)
+* **tier 4** the code mostly does not work or was not submitted.  - (0% xp)
 
-For example, if a task is worth 20 points, you might get 20 for tier 1, 16 for tier 2, 12 for tier 3, 8 for tier 4 and zero for tier 5. 
+For example, if a task is worth 20 points, you might get 20 for tier 1, 15 for tier 2, 7 for tier 3,  and zero for tier 4. 
 
-You can submit up to two tasks per week.
+**You can submit up to two tasks per week.**
 
 ### Projects
 
@@ -143,7 +142,17 @@ Obviously, the work-at-your-own pace approach will collide with the end of the s
 
 This course is work at your own pace. Other courses you might be taking have fixed deadlines, So, for example, you might have a gnarly project for a programming class due this week and a big operating systems project due next week. It is likely that you will work on those projects since they have immediate deadlines and ignore working on this course. It is human nature. To give you some flexibility but to help you stay focused, there will be both recommended and hard deadlines for each project. For example, one project has a recommended deadline of the fourth week of class and a hard deadline of the eighth week. 
 
+By **hard deadline** I mean that any work received after the deadline will not receive any xp. 
 
+ By **recommended deadline** I mean a suggested deadline that is designed to help you get an A in the course and equally distribute the work throughout the semester.
+
+**There is nothing to prevent you from doing all the course work in 12 weeks, get an A, and spend the remainder of the semester focused on your other classes.**
+
+### The design of hard and soft deadlines
+
+If you work at a pace set by the hard deadlines you will pass the course with a D. In a sense, the hard deadlines are provided as a safety net to have people stay on track to pass the course.
+
+If you work at a pace set by the soft deadlines you will get an A in the class.
 
 ## The course material
 
@@ -165,45 +174,33 @@ Again, the class is work-at-your-own pace, but we provide a suggested schedule b
 
 Week | Date | Unit | Topics
 --: | :--- | :--- | :---
-1 | 24 Aug | Intro | Intro, MVC, RESTful, Gitlab lab 
-2 | 31 Aug | SQL | creating and inserting data into a databas. Update, alter, delete 
-3 | 7 Sep | Javascript  | Intro to Javascript                                          
-4 | 14 Sep | JavaScript | NodeJS, using PostgreSQL with Node                           
-5 | 21 Sep |Deplayment |Google Cloud, Nginx reverse proxy
-6 | 28 Sep | SQL | 3NF, joins 
-7 | 5 Oct | SQL           |transactions
-8 | 12 Oct | Javascript  |Intro to React and Nextjs
-9 | 19 Oct | JavaScript |Full Stack Web Development
-10 | 26 Oct | JavaScript | cookies 
-11 | 2 Nov |JavaScript |-
-12 | 9 Nov | ElasticSearch | noSQL, Elastic Search 
-13 | 16 Nov  | Projects      | -                                           
-14 | 23 Nov | Projects      | -                                           
-15 | 30 Nov | Projects      | - 
+1 | 25 Jan | Intro | Intro, MVC, RESTful, Gitlab lab 
+2 | 1 Feb | SQL | creating and inserting data into a databas. Update, alter, delete 
+3 | 8 Feb | Javascript  | Intro to Javascript                                         
+4 | 15 Feb | JavaScript | NodeJS, using PostgreSQL with Node                           
+5 | 22 Feb |Deplayment |Google Cloud, Nginx reverse proxy
+6 | 1 Mar | SQL | 3NF, joins 
+7 | 8 Mar | SQL           |transactions
+8 | 15 Mar | Javascript  |Intro to React and Nextjs
+9 | 22 Mar | JavaScript |Full Stack Web Development
+10 | 29 Mar | JavaScript | cookies 
+11 | 5 Apr |JavaScript |-
+12 | 12 Apr | ElasticSearch | noSQL, Elastic Search 
+13 | 19 Apr | Projects      | -                                           
+14 | 26 Apr | Projects      | -                                           
 
 ### Deadlines hard and soft
 
-Meeting the hard deadlines should put you around a C for the course. To be considered to be on time for a hard deadline, the code must be submitted before the date indicated.
+Meeting the hard deadlines should put you around a C for the course. To be considered to be on time for a hard deadline, the code must be submitted **before** the date indicated.
 
-| Week | Date   | Recommended             | Hard deadline                |
-| ---: | :----- | :---------------------- | :--------------------------- |
-|    1 | 24 Aug | -                       | -                            |
-|    2 | 31 Aug | -                       | -                            |
-|    3 | 7 Sep  | -                       | -                            |
-|    4 | 14 Sep | -                       | -                            |
-|    5 | 21 Sep | Project 1 - Workshop    | -                            |
-|    6 | 28 Sep | Project 2 - Workshop v2 | -                            |
-|    7 | 5 Oct  | -                       | Project 1 - Workshop         |
-|    8 | 12 Oct | Project 3 - NextJS      | -                            |
-|    9 | 19 Oct | Project 4 - Nutrition   | Project 2 - Workshop v2      |
-|   10 | 26 Oct | -                       | -                            |
-|   11 | 2 Nov  | Project 5 - TBD         | -                            |
-|   12 | 9 Nov  | -                       | Project 3 - NextJS           |
-|   13 | 16 Nov | Project 6 - TBD         | -                            |
-|   14 | 23 Nov | -                       | Project 4 - Complete Web App |
-|   15 | 30 Nov | Elasticsearch           | -                            |
-
-
+Project | Recommended Deadline | Hard Deadline
+:--- | :---: | :---:
+1 Workshop v1 | 27 Feb | 13 Mar
+2 Workshop v2 | 6 Mar | 27 Mar
+3 NextJS | 20 Mar | 16 Apr
+4 Complete Web App | 27 Mar | 30 Apr
+5  SuperSearch | 10 Apr | -
+6 ElasticSearch | 30 Apr | -
 
 
 
@@ -245,9 +242,9 @@ Ten | 1100 | A
 
 Here are the ways of earning XP:
 
-* there will be at least 7 tasks. On average each will be worth 20xp
+* there will be at least 10 tasks. On average each will be worth 22xp
 
-* there are 6 PostgreSQL projects. Each is worth 125xp
+* there are 6 PostgreSQL projects. On average, each is worth 125xp
 
 * there is an ElasticSearch project worth 150xp
 
