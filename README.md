@@ -220,7 +220,7 @@ Slack is a work chat application that many tech companies use. We are going to b
 
 
 
-[Sign up for Slack here](https://join.slack.com/t/umwdatabaseclass/shared_invite/zt-ghwsee5i-aA8KlDiJGP_up9f3kK_eqg).
+[Sign up for Slack here](https://join.slack.com/t/umwdatabaseclass/shared_invite/zt-k29hsocn-UTDcbu8hYxHvKpHspHAuKA).
 
 ## Okay but how do I pass?
 

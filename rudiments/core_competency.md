@@ -6,7 +6,7 @@
 
 #### Prerequisite: completion of workshop v1 and v2
 
-### You will have 6 hours to complete this task.
+### You will have 4 hours to complete this task.
 
 
 
@@ -26,9 +26,9 @@ You will be designing and implementing an SQL database and writing a NodeJS appl
 
   
 
-Before starting, you may want to familiarize yourself with the code you have written for this class, particularly that for workshop v1 and v2. Basically, you will be writing code for a something similar to the workshop 2 task. During the 6 hours, you can have your code for all the tasks and project available to you, and you can use the internet for assistance. If you feel you are still a bit shakey understanding workshop v2, feel free to chat with other students in the class about these rudiments, **BEFORE YOU RECEIVE THE QUESTION**. **Collaboration after you receive the question will be considered cheating** (for example you cannot ask a person who took the competency test about it or how to best prepare for it).
+Before starting, you may want to familiarize yourself with the code you have written for this class, particularly that for workshop v1 and v2. Basically, you will be writing code for a something similar to the workshop 2 task. During the 4 hours, you can have your code for all the tasks and project available to you, and you can use the internet for assistance. If you feel you are still a bit shakey understanding workshop v2, feel free to chat with other students in the class about these rudiments, **BEFORE YOU RECEIVE THE QUESTION**. **Collaboration after you receive the question will be considered cheating** (for example you cannot ask a person who took the competency test about it or how to best prepare for it).
 
-You will have 6 hours to complete the task. Before you start:
+You will have 4 hours to complete the task. Before you start:
 
 1. allocate a block of time to work on the task.
 2. be at a computer with the set of tools you use for coding (you favorite development environment)
