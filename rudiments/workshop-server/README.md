@@ -12,7 +12,7 @@ Task | Description
 [Task 2](../../tasks/task2) | Getting started with Javascript
 [Task 3](../../tasks/task3) | Your first nodeJS server
 [Task 4](../../tasks/task4) | NodeJS and PostgreSQL
-[Task 4.5](../../tasks/task4.5 | Getting your Node app running on a Google VM
+[Task 4.5](../../tasks/task4.5) | Getting your Node app running on a Google VM
 
 ## Some Guidance
 
