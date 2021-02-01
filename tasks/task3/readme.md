@@ -1,5 +1,12 @@
 # Task 3. Your first node server
 
+### Associated Videos
+
+In the [Intro to Node Module](http://inquiryum.com/modules/nodejs%20module/Intro-to-Node/) of the Inquiryum course:
+
+- Basic Server
+- Postman
+
 In the Basic Server and Postman units of the Nodejs module, you learned how to
 
 - write simple get requests
