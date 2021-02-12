@@ -10,6 +10,156 @@ This task is designed to help you practice these skills.
 
 
 
+### First the `map` method
+
+The map method is an extremely useful function to know. 
+
+The `map` method which can be applied to any array.   If `friends` is an array, we can apply the map method to that array with
+
+
+
+```
+friends.map(...)
+```
+
+What `map` does it apply a function to each element of an array and return the results in an array of equal length.
+
+
+
+ Let's start with a simple example:
+
+```
+grades = [1, 2, 3, 4, 5];
+const newgrades = grades.map((x) => {
+  return x + 10;
+});
+console.log(newgrades);
+```
+
+1. `grades.map` will apply the function `(x) => { return x + 10;} ` to each element of the array
+2. `x` is the argument of that function and it is instantiated to each element of the array in turn. So first `x` equals 1. 
+3. the function returns `x + 10` or 11 So the first element of the result will be [11]
+4. we apply that function to the remaining elements of the array 
+5. newgrades will equal [11, 12, 13, 14, 15]
+
+
+
+Here is a more realistic example
+
+Suppose `dogs` is an array.
+
+```
+const dogs = [
+  {
+    name: "Roper",
+    breed: "Border Collie",
+    color: "black",
+    owner: "Allison Russell",
+  },
+  { name: "Clyde", breed: "Lab", color: "chocolate", owner: "Natalie Hemby" },
+  {
+    name: "Roz",
+    breed: "Standard Poodle",
+    color: "chocolate",
+    owner: "Olivia Kaplan",
+  },
+  {
+    name: "Dido",
+    breed: "Border Collie",
+    color: "black",
+    owner: "Allison Russell",
+  },
+  {
+    name: "Merce",
+    breed: "Standard Poodle",
+    color: "white",
+    owner: "Megan Morris",
+  },
+  {
+    name: "Sparky",
+    breed: "Standard Poodle",
+    color: "red",
+    owner: "Brandi Carlile",
+  },
+  {
+    name: "Bo",
+    breed: "Portuguese Water Dog",
+    color: "black",
+    owner: "Barack Obama",
+  },
+  {
+    name: "Sunny",
+    breed: "Portuguese Water Dog",
+    color: "black",
+    owner: "Barack Obama",
+  },
+  {
+    name: "Kiko",
+    breed: "Border Collie",
+    color: "black",
+    owner: "Amanda Shires",
+  },
+];
+
+```
+
+
+
+And we just want an array of json objects with with the key `petName` instead of `name` and `ownerName` instead of `owner` so something like ...
+
+```
+[
+  { dogName: 'Roper', ownerName: 'Allison Russell' },
+  { dogName: 'Clyde', ownerName: 'Natalie Hemby' },
+  { dogName: 'Roz', ownerName: 'Olivia Kaplan' },
+  { dogName: 'Dido', ownerName: 'Allison Russell' },
+  { dogName: 'Merce', ownerName: 'Megan Morris' },
+  { dogName: 'Sparky', ownerName: 'Brandi Carlile' },
+  { dogName: 'Bo', ownerName: 'Barack Obama' },
+  { dogName: 'Sunny', ownerName: 'Barack Obama' },
+  { dogName: 'Kiko', ownerName: 'Amanda Shires' }
+]
+
+```
+
+
+
+This is easy by using the map method...
+
+
+
+```
+const result = dogs.map((dog) => {
+  return { dogName: dog.name, ownerName: dog.owner };
+});
+console.log(result);
+```
+
+So the function argument `dog` is equal to each element of the `dogs` array in turn. So first it is equal to...
+
+
+
+```
+{
+    name: "Roper",
+    breed: "Border Collie",
+    color: "black",
+    owner: "Allison Russell",
+  }
+```
+
+the function returns `{ dogName: dog.name, ownerName: dog.owner }` which would be
+
+```
+{ dogName: 'Roper', ownerName: 'Allison Russell' }
+```
+
+
+
+You will be using the map method throughout the course.
+
+
+
 ## The steps
 
 ### Step 0 installation of software
@@ -40,7 +190,7 @@ For the gitlab lab we created our own git repository. We want to copy the task4 
 
 ### step 2 add a .env file with the following information
 
-In the `task4` directory you need to add a file name `.env` with the contents:
+In the `task1` directory you need to add a file name `.env` with the contents:
 
 ```
 DB_HOST=localhost
