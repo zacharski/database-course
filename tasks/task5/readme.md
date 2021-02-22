@@ -4,7 +4,9 @@
 
 In the section you will learn how to connect a front end to an existing server.
 
+### Associated Videos
 
+All the topics in the [NextJS module]([http://inquiryum.com/modules/nextjs%20module/Intro/](http://inquiryum.com/modules/nextjs module/Intro/)) except persistance. 
 
 
 

@@ -1,5 +1,19 @@
 # quick guide to getting a Node app running in a Google VM
 
+
+
+### Associated Videos
+
+In the deploy module:
+
+
+
+* The [git]([http://inquiryum.com/modules/deploy%20module/Git/](http://inquiryum.com/modules/deploy module/Git/)) topic if you don't know git well
+* the short [cloud services]([http://inquiryum.com/modules/deploy%20module/Cloud-Services/](http://inquiryum.com/modules/deploy module/Cloud-Services/)) topic
+* [deploying your app]([http://inquiryum.com/modules/deploy%20module/Deploying-Your-App/](http://inquiryum.com/modules/deploy module/Deploying-Your-App/)) topic
+
+
+
 ### 1. Have code on Github
 
 We developed and tested our code on our laptop and pushed it to github. For this task I am assuming you are using the code from task4.

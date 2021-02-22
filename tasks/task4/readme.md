@@ -2,7 +2,15 @@
 
 
 
-In the section on PostgreSQL and NodeJS of the NodeJS module you learned how to write code that makes asynchronous calls to a PostgreSQL database.
+
+
+### Associated Videos
+
+In the Node JS module 
+
+* both videos of [the Postgres and NodeJS]([http://inquiryum.com/modules/nodejs%20module/Postgres-and-Nodejs/](http://inquiryum.com/modules/nodejs module/Postgres-and-Nodejs/))  topic. 
+
+In this module topic you learned how to write code that makes asynchronous calls to a PostgreSQL database.
 
 
 
