@@ -1,28 +1,31 @@
 # Task 7. Getting Serious with SQL
 
+### Associated Videos
+
+- All the videos in the [SQL 2 Module](http://inquiryum.com/modules/sql2%20module/Sql2-Intro/)
+
 ## The steps
 
 #### 1. install the sql files into postgresql
 
 Because of the size of the files, they are not included in this repository.
 
-
-
-* [Movie Database SQL file](http://www.zacharski.org/files/courses/cs350/moviesP.sql)
-* [Chinook](http://www.zacharski.org/files/courses/cs350/ChinookPv2.sql)
+- [Movie Database SQL file](http://www.zacharski.org/files/courses/cs350/moviesP.sql)
+- [Chinook](http://www.zacharski.org/files/courses/cs350/ChinookPv2.sql)
 
 After you insert them into PostgreSQL, look them over to understand the structure of the two databases.
 
-
-
 #### 2. Get the code
-The files we need are in the same folder as this readme file.  
+
+The files we need are in the same folder as this readme file.
 
 #### 3. Create a .env file
+
 Make sure to create a .env file as you did for other tasks.
 
 #### 4. install the libraries
-Install the libraries using 
+
+Install the libraries using
 
 ```
 npm install
@@ -30,17 +33,11 @@ npm install
 
 #### 5. the first execution
 
-Finally we are going to run the code with 
-
-
+Finally we are going to run the code with
 
 `node task.js`
 
-
-
 If you followed all the steps correctly you should see:
-
-
 
 ```
 
@@ -58,13 +55,11 @@ LOOKS LIKE THE DATABASE WAS INSTALLED CORRECTLY
 
 ```
 
-
-
 #### Step 7. Writing the first query
 
-The queries in English are written in English. You are to convert these to SQL queries. **You will not be editing task.js**. All your queries will be in the file `queries.json`. 
+The queries in English are written in English. You are to convert these to SQL queries. **You will not be editing task.js**. All your queries will be in the file `queries.json`.
 
-For example, the first query is *What movies was Nicolas Cage in? (please name the columns film and actor) ordered alphabetically by film title?* The queries.json file looks like:
+For example, the first query is _What movies was Nicolas Cage in? (please name the columns film and actor) ordered alphabetically by film title?_ The queries.json file looks like:
 
 ```
 {
@@ -108,8 +103,6 @@ That means that your query 1 was correct and it is time to move to query 2!
 
 This task is worth 35xp.
 
-
-
 ### Queries
 
 1. What movies was Nicolas Cage in? (please name the columns film and actor) ordered alphabetically by film title?
@@ -125,11 +118,8 @@ This task is worth 35xp.
 6. What actors were in movies with Michelle Pfeiffer? (column named actors and order by actors)
 
 7. I would like to see the artist name and the number of albums that artist produced. I want to see the top five in order. Name the columns artist and albums (Chinook)
-   
-8.  A list of the albums by Santana (in a column called album ordered alphabetically).
+8. A list of the albums by Santana (in a column called album ordered alphabetically).
 
 9. The first and last names of all employees and the first and lastnames of who they report to. Label the columns employee_firstname, employee_lastname, manager_firstname, manager_lastname. Order by Employee lastname then firstname. don't display employees who don't report to anyone (Chinook )
 
 10. I would like to know the artist that sold the most number of tracks (columns named artist and tracks_sold)
-
-    
