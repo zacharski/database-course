@@ -2,7 +2,7 @@
 
 You are going to be writing Javascript server side code to support people signing up for workshops. A short demo or this is in the RESTful video [here](https://youtu.be/oDEO9-OM4_c?t=9m21s). 
 
-Postman File: [workshop1_postman_collection.json](http://zacharski.org/files/courses/cs350/workshop1_postman_collection.json)
+Postman File:  included in this workshop directory
 
 ### Prerequisite Tasks
 

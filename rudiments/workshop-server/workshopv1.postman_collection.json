@@ -1,0 +1,749 @@
+{
+	"info": {
+		"_postman_id": "f27e14fe-1ac7-4940-b766-029a518e4c56",
+		"name": "workshopv1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Adding Claire to React",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"console.log('Checking Post')",
+							"tests[\"Add Attendee \"] = data.attendee === 'Claire Kim';",
+							"tests[\"Check 2\"] = data.workshop === 'React Fundamentals';"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "q",
+						"value": "Starbucks",
+						"disabled": true
+					},
+					{
+						"key": "zip",
+						"value": "88005",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					},
+					{
+						"key": "search",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "React Fundamentals",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Claire Kim",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding Emily to React",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"console.log('Checking Post')",
+							"tests[\"Add Attendee \"] = data.attendee === 'Emily Blunt';",
+							"tests[\"Check 2\"] = data.workshop === 'React Fundamentals';"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "q",
+						"value": "Starbucks",
+						"disabled": true
+					},
+					{
+						"key": "zip",
+						"value": "88005",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					},
+					{
+						"key": "search",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "React Fundamentals",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Emily Blunt",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding Claire to TensorFlow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"console.log('Checking Post');",
+							"tests[\"Add Attendee to Another Workshop\"] = data.attendee === 'Claire Kim';",
+							"tests[\"Check 2\"] = data.workshop === 'TensorFlow';"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "q",
+						"value": "Starbucks",
+						"disabled": true
+					},
+					{
+						"key": "zip",
+						"value": "88005",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					},
+					{
+						"key": "search",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "TensorFlow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Claire Kim",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding attendee to same workshop",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"console.log('Checking Post');",
+							"tests[\"Duplicate Registration\"] = data.error === 'attendee already enrolled';",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "q",
+						"value": "Starbucks",
+						"disabled": true
+					},
+					{
+						"key": "zip",
+						"value": "88005",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					},
+					{
+						"key": "search",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "React Fundamentals",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Emily Blunt",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding Lucy to TensorFlow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"console.log('Checking Post');",
+							"tests[\"Add Lucy Passed\"] = data.attendee === 'Lucy Phillips';",
+							"tests[\"Check 2\"] = data.workshop === 'TensorFlow';"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "q",
+						"value": "Starbucks",
+						"disabled": true
+					},
+					{
+						"key": "zip",
+						"value": "88005",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					},
+					{
+						"key": "search",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "TensorFlow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Lucy Phillips",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding Lucy to Docker",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"console.log('Checking Post');",
+							"tests[\"Add Lucy Passed\"] = data.attendee === 'Lucy Phillips';",
+							"tests[\"Check 2\"] = data.workshop === 'Intro to Docker';"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "q",
+						"value": "Starbucks",
+						"disabled": true
+					},
+					{
+						"key": "zip",
+						"value": "88005",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					},
+					{
+						"key": "search",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "Intro to Docker",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Lucy Phillips",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check SQL injection",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"SQL Injection test\"] = data.attendee === \"Maggie O'Phillips\";",
+							"tests[\"Check 2\"] = data.workshop === 'TensorFlow';"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "q",
+						"value": "Starbucks"
+					},
+					{
+						"key": "zip",
+						"value": "88005"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "search",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "TensorFlow",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "Maggie O'Phillips",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check SQL injection absurd quotes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"SQL Injection test\"] = data.attendee === \"'Maggie O'Ryan'\";",
+							"tests[\"Check 2\"] = data.workshop === 'Piano'; "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "q",
+						"value": "Starbucks",
+						"disabled": true
+					},
+					{
+						"key": "zip",
+						"value": "88005",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					},
+					{
+						"key": "search",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "workshop",
+							"value": "Piano",
+							"description": "\n",
+							"type": "text"
+						},
+						{
+							"key": "attendee",
+							"value": "'Maggie O'Ryan'",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "88001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all workshops",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Listing Workshops\"] = data.workshops.indexOf('TensorFlow') != -1;",
+							"tests[\"Listing Workshops 2\"] = data.workshops.indexOf('React Fundamentals') != -1;",
+							"tests[\"Listing Workshops Docker\"] = data.workshops.indexOf('Intro to Docker') != -1;",
+							"tests[\"Listing Workshops Piano\"] = data.workshops.indexOf('Piano') != -1;",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Attendees - TensorFlow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Listing Attendees\"] = data.attendees.indexOf('Lucy Phillips') != -1;",
+							"tests[\"Listing Workshops 2\"] = data.attendees.indexOf('Claire Kim') != -1;",
+							"tests[\"Listing Workshops 2\"] = data.attendees.indexOf(\"Maggie O'Phillips\") != -1;",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "workshop",
+						"value": "TensorFlow"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/api?workshop=TensorFlow",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "workshop",
+							"value": "TensorFlow"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Non Existent Workshop",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"workshop not entered\"] = data.error === 'workshop not found';",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api?workshop=Deep+Learning",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "workshop",
+							"value": "Deep+Learning"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Attendees workshop not exist",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"tests[\"Non-Existent Workshop\"] = data.error.indexOf('workshop not found') != -1;",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "workshop",
+						"value": "TensorFlow"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/api?workshop=Tensor",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "workshop",
+							"value": "Tensor"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
