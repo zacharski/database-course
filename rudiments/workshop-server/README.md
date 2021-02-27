@@ -69,18 +69,20 @@ If the value of the workshop argument (React Fundamentals in this case) is not p
 
 If the API does not include the workshop argument, return a JSON with a list of all the unique workshops:
 
+```
 
+{ "workshops": [
+    "DevOps 101",
+    "Docker Container Fundamentals",
+    "Machine Learning",
+    "Modern Javascript",
+    "MongoDB",
+    "React Fundamentals",
+    "Self-Driving Cars"
+  ]
+}
 
-``{ "workshops": [`
-    `"DevOps 101",`
-    `"Docker Container Fundamentals",`
-    `"Machine Learning",`
-    `"Modern Javascript",`
-    `"MongoDB",`
-    `"React Fundamentals",`
-    `"Self-Driving Cars"`
-  `]`
-`}`
+```
 
 ### API post request
 
