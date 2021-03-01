@@ -1,0 +1,6 @@
+course,title,section,day,morning/afternoon,instructor,instructor email,building,room,description
+CS120,Javascript Fundamentals,1,MW,morning ,Becca Elenzil,elenzil@ada.org,downtown,c12,"This course is designed to provide a solid introduction to the JavaScript language. We will explore the more unique and tricky JavaScript features such as closures, higher-order functions, "
+CS120,Javascript Fundamentals,2,MW,afternoon,Claire Elliot,elliot@ada.org,downtown,c8,"This course is designed to provide a solid introduction to the JavaScript language. We will explore the more unique and tricky JavaScript features such as closures, higher-order functions,"
+CS220,PostgreSQL,1,MW,morning,Becca Elenzil,elenzil@ada.org,downtown,c12,"This course will teach you how to explore, modify, and export data from a database. You’ll be introduced to foundational concepts like tables, data types, and queries. "
+CS340,DevOps,1,TT,afternoon,Kaida Masaki,kmas@ada.org,Nob Hill,nh1,We examine the definition and concepts around the ideas of DevOps. How do they relate to working in the cloud?
+CS340,DevOps,2,MW,afternoon,Kaida Masaki,kmas@ada.org,downtown,c10,We examine the definition and concepts around the ideas of DevOps. How do they relate to working in the cloud?

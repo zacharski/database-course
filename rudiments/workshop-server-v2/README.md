@@ -6,6 +6,13 @@ Postman File in our github repo for this project
 
 
 
+### Prerequisites
+
+* Task 7: Getting serious with SQL
+* Task 7.5: Getting serious with SQL part 2
+
+
+
 ## Requirements
 
 
