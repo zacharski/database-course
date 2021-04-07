@@ -189,7 +189,7 @@ Now when we search for a park, for example _Denali_ we should see the state upda
 We only want to execute this next part of the page if there are results. So, below the submit button we will add the conditional
 
 ```
-this.state.parkInfo ? (
+{ this.state.parkInfo ? (
           <div>
             ...
           </div>
