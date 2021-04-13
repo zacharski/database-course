@@ -1,6 +1,6 @@
 # CS450 Core Competency
 
-#### *due: anytime before 11pm on 4 December*
+#### *due: anytime before 11pm on 4 May*
 
 
 
