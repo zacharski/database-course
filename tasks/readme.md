@@ -6,7 +6,7 @@
 
 In this course I distinguish between your development machine (typically your laptop) and your production machine (the Google Cloud Virtual Machine (VM)). I am glossing over some nuances here but you should never, ever, develop code on you Google Cloud instance. You develop code on your laptop. I probably am repeated this point in about 5 different places in the material but some people somehow mess this up.
 
-Anyway, tasks are to be done on your laptop. You clone the provided files, add your code, and test, debug, test. When you finished, you push your code to your github repository and notify me by [filling our this form](https://forms.gle/Wymwd7ZoTvMs3vYL7).
+Anyway, tasks are to be done on your laptop. You clone the provided files, add your code, and test, debug, test. When you finished, you push your code to your github repository and notify me by [filling out this form](https://forms.gle/Wymwd7ZoTvMs3vYL7).
 
 Again, you don't need to get any of these running on Google Cloud.
 
